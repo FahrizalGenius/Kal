@@ -2,13 +2,13 @@
 title: sistem_persamaan_3variabel
 
 ---
-
-# penyelesaian sistem linear dengan menggunakan sistem persamaan linear gaus
+# Sistem Persamaan Linear 
+### penyelesaian sistem linear dengan menggunakan sistem persamaan linear gaus
 Sistem persamaan linear (SPL) adalah kumpulan persamaan linear yang melibatkan beberapa variabel.
 
 Tujuan: Menemukan nilai variabel yang memenuhi semua persamaan secara simultan.
 
-## Sistem Persamaan Linear dengan 3 Persamaan
+### Sistem Persamaan Linear dengan 3 Persamaan
 $$
 \begin{cases}2 x+y-z=1 & \text { (Persamaan 1) } \\ x-y+2 z=3 & \text { (Persamaan 2) } \\ 3 x+2 y+z=4 & \text { (Persamaan 3) }\end{cases}
 $$
