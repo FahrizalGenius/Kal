@@ -65,7 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'INVERS_MATRIK';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Sistem Persamaan Linear" href="sistem_persamaan_3variabel.html" />
+    <link rel="prev" title="SISTEM PERSAMAAN LINIER" href="sistem_persamaan_3variabel.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -364,6 +364,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks-invers">Definisi Matriks Invers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-suatu-matriks-memiliki-invers">Syarat Suatu Matriks Memiliki Invers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-3-persamaan">MATRIK 3 PERSAMAAN</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-invers-matriks-a">Langkah-langkah mencari invers matriks <span class="math notranslate nohighlight">\({A}\)</span> :</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-determinan-a">1. Hitung Determinan <span class="math notranslate nohighlight">\(|A|\)</span></a></li>
@@ -388,6 +390,42 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="invers-matrik">
 <h1>INVERS MATRIK<a class="headerlink" href="#invers-matrik" title="Link to this heading">#</a></h1>
+<section id="definisi-matriks-invers">
+<h2>Definisi Matriks Invers<a class="headerlink" href="#definisi-matriks-invers" title="Link to this heading">#</a></h2>
+<p>Matriks invers adalah matriks yang jika dikalikan dengan matriks aslinya menghasilkan matriks identitas.</p>
+<p>Secara matematis, jika <span class="math notranslate nohighlight">\(\boldsymbol{A}\)</span> adalah sebuah matriks persegi, maka inversnya, yang ditulis sebagai <span class="math notranslate nohighlight">\(A^{-1}\)</span>, memenuhi persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+A \times A^{-1}=A^{-1} \times A=I
+\]</div>
+<p>di mana <span class="math notranslate nohighlight">\(I\)</span> adalah matriks identitas, yaitu matriks dengan angka 1 di diagonal utama dan <span class="math notranslate nohighlight">\(\mathbf{0}\)</span> di tempat lainnya.
+Contoh matriks identitas untuk ukuran <span class="math notranslate nohighlight">\(2 \times 2\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I=\left[\begin{array}{ll}
+1 &amp; 0 \\
+0 &amp; 1
+\end{array}\right]
+\end{split}\]</div>
+<p>dan untuk ukuran <span class="math notranslate nohighlight">\(3 \times 3\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I=\left[\begin{array}{lll}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{array}\right]
+\end{split}\]</div>
+</section>
+<section id="syarat-suatu-matriks-memiliki-invers">
+<h2>Syarat Suatu Matriks Memiliki Invers<a class="headerlink" href="#syarat-suatu-matriks-memiliki-invers" title="Link to this heading">#</a></h2>
+<p>Tidak semua matriks memiliki invers. Suatu matriks <span class="math notranslate nohighlight">\(A\)</span> bisa memiliki invers <span class="math notranslate nohighlight">\(A^{-1}\)</span> jika memenuhi dua syarat berikut:</p>
+<ol class="arabic simple">
+<li><p>Matriks harus berbentuk persegi <span class="math notranslate nohighlight">\(\rightarrow\)</span> jumlah baris harus sama dengan jumlah kolom.</p></li>
+<li><p>Determinan tidak boleh nol <span class="math notranslate nohighlight">\(\rightarrow|A| \neq 0\)</span>.</p></li>
+</ol>
+<p>Jika determinannya nol <span class="math notranslate nohighlight">\((|A|=0)\)</span>, maka matriks disebut singular dan tidak memiliki invers.</p>
+</section>
 <section id="matrik-3-persamaan">
 <h2>MATRIK 3 PERSAMAAN<a class="headerlink" href="#matrik-3-persamaan" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
@@ -424,7 +462,7 @@ B=\left[\begin{array}{l}
 \end{array}\right]
 \end{gathered}
 \end{split}\]</div>
-<p>Untuk mencari <span class="math notranslate nohighlight">\(X\)</span>, harus mencari invers dari matriks <span class="math notranslate nohighlight">\(A\)</span>, yaitu <span class="math notranslate nohighlight">\(A^{-1}\)</span>, dan mengalikannya dengan <span class="math notranslate nohighlight">\(B\)</span></p>
+<p>Untuk mencari <span class="math notranslate nohighlight">\(X\)</span>, kita harus mencari invers dari matriks <span class="math notranslate nohighlight">\(A\)</span>, yaitu <span class="math notranslate nohighlight">\(A^{-1}\)</span>, dan mengalikannya dengan <span class="math notranslate nohighlight">\(B\)</span></p>
 <div class="math notranslate nohighlight">
 \[
 X=A^{-1} B
@@ -443,15 +481,25 @@ X=A^{-1} B
 0 &amp; 0 &amp; 1
 \end{array}\right|
 \end{split}\]</div>
-<p>Menggunakan metode ekspansi kofaktor:</p>
+<p>Menggunakan metode ekspansi kofaktor pilih baris pertama untuk ekspansi:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-|A|=1 \times\left|\begin{array}{ll}
+|A|=1 \times\left|\begin{array}{cc}
 1 &amp; 4 \\
 0 &amp; 1
+\end{array}\right|-2 \times\left|\begin{array}{ll}
+0 &amp; 4 \\
+0 &amp; 1
+\end{array}\right|+3 \times\left|\begin{array}{ll}
+0 &amp; 1 \\
+0 &amp; 0
 \end{array}\right|
 \end{split}\]</div>
-<p>Karena:</p>
+<p>Hasil Perhitungan
+Sekarang hitunglah determinannya satu per satu:</p>
+<ol class="arabic simple">
+<li><p>Determinasi submatriks pertama:</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \left|\begin{array}{ll}
@@ -459,11 +507,30 @@ X=A^{-1} B
 0 &amp; 1
 \end{array}\right|=(1 \times 1)-(4 \times 0)=1
 \end{split}\]</div>
-<p>Maka:</p>
+<ol class="arabic simple" start="2">
+<li><p>Determinasi submatriks kedua:</p></li>
+</ol>
 <div class="math notranslate nohighlight">
-\[
-|A|=1 \times 1=1
-\]</div>
+\[\begin{split}
+\left|\begin{array}{ll}
+0 &amp; 4 \\
+0 &amp; 1
+\end{array}\right|=(0 \times 1)-(4 \times 0)=0
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Determinasi submatriks ketiga:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left|\begin{array}{ll}
+0 &amp; 1 \\
+0 &amp; 0
+\end{array}\right|=(0 \times 0)-(1 \times 0)=0
+\end{split}\]</div>
+<p>Sehingga:
+$<span class="math notranslate nohighlight">\(
+|A|=1 \times 1-2 \times 0+3 \times 0=1
+\)</span>$</p>
 <p>Karena <span class="math notranslate nohighlight">\(|{A}| \neq 0\)</span>, maka matriks memiliki invers.</p>
 </section>
 <section id="hitung-matriks-kofaktor">
@@ -545,7 +612,7 @@ A^{-1}=\left[\begin{array}{ccc}
 <ol class="arabic simple" start="5">
 <li><p>Hitung <span class="math notranslate nohighlight">\(X=A^{-1} B\)</span></p></li>
 </ol>
-<p>Kita kalikan <span class="math notranslate nohighlight">\(A^{-1}\)</span> dengan <span class="math notranslate nohighlight">\(B\)</span> :</p>
+<p>lalu kalikan <span class="math notranslate nohighlight">\(A^{-1}\)</span> dengan <span class="math notranslate nohighlight">\(B\)</span> :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 X=\left[\begin{array}{ccc}
@@ -576,7 +643,7 @@ X=\left[\begin{array}{l}
 <section id="kesimpulan">
 <h4>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Matriks <span class="math notranslate nohighlight">\(\boldsymbol{A}\)</span> yang kita gunakan adalah:</p></li>
+<li><p>Matriks <span class="math notranslate nohighlight">\(\boldsymbol{A}\)</span> yang digunakan adalah:</p></li>
 <li></li>
 </ul>
 <div class="math notranslate nohighlight">
@@ -642,7 +709,7 @@ X=\left[\begin{array}{l}
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Sistem Persamaan Linear</p>
+        <p class="prev-next-title">SISTEM PERSAMAAN LINIER</p>
       </div>
     </a>
 </div>
@@ -662,6 +729,8 @@ X=\left[\begin{array}{l}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks-invers">Definisi Matriks Invers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-suatu-matriks-memiliki-invers">Syarat Suatu Matriks Memiliki Invers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-3-persamaan">MATRIK 3 PERSAMAAN</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-invers-matriks-a">Langkah-langkah mencari invers matriks <span class="math notranslate nohighlight">\({A}\)</span> :</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-determinan-a">1. Hitung Determinan <span class="math notranslate nohighlight">\(|A|\)</span></a></li>
