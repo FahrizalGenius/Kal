@@ -2,7 +2,7 @@
 title: sistem_persamaan_3variabel
 
 ---
-# Sistem Persamaan Linear 
+# SISTEM PERSAMAAN LINIER 
 ### penyelesaian sistem linear dengan menggunakan sistem persamaan linear gaus
 Sistem persamaan linear (SPL) adalah kumpulan persamaan linear yang melibatkan beberapa variabel.
 
