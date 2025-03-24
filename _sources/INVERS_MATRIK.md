@@ -291,18 +291,24 @@ $$
 \end{array}\right]
 $$
 
+
 Langkah 1: Menghilangkan Elemen (1,3)
 Dari baris 1:
+
+
 $$
 R_1 \rightarrow R_1-\left(\frac{10}{17} \times R_3\right)
 $$
+
 
 Hitung setiap elemen baru pada baris 1:
 $$
 R_1=R_1-\frac{10}{17} R_3
 $$
 
+
 Untuk setiap elemen di baris 1:
+
 
 $$
 \begin{array}{|c|c|c|}
@@ -324,7 +330,9 @@ $$
 \end{array}
 $$
 
+
 Menyederhanakan elemen $(1,4)$ dan $(1,5):$
+
 
 $$
 \begin{aligned}
@@ -333,7 +341,9 @@ $$
 \end{aligned}
 $$
 
+
 Sehingga, baris 1 yang baru adalah:
+
 
 $$
 \left[\begin{array}{lll|lll}
@@ -341,20 +351,26 @@ $$
 \end{array}\right]
 $$
 
+
 Langkah 2: Menghilangkan Elemen (2,3)
 Dari baris 2:
+
 
 $$
 R_2 \rightarrow R_2+\left(\frac{9}{7} \times R_3\right)
 $$
 
+
 Hitung setiap elemen baru pada baris 2: 
+
 
 $$
 R_2=R_2+\frac{9}{7} R_3
 $$
 
+
 Untuk setiap elemen di baris 2:
+
 
 $$
 \begin{equation}
@@ -371,7 +387,9 @@ $$
 \end{equation}
 $$
 
+
 Sehingga, baris 2 yang baru adalah:
+
 
 $$
 \left[\begin{array}{lll|lll}
@@ -379,8 +397,10 @@ $$
 \end{array}\right]
 $$
 
+
 Hasil Akhir Setelah Transformasi
 Setelah menghilangkan elemen $(1,3)$ dan $(2,3)$ , matriks menjadi:
+
 
 $$
 \left[\begin{array}{cccccc}
