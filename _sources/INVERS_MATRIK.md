@@ -108,25 +108,20 @@ $$
 Perhitungan Baris 2 Baru ( $\mathbf{R}_{\mathbf{2}}$ )
 Setiap elemen baris 2 dikurangi baris 1.
 
-
+$$
+\begin{equation}
 \begin{array}{|c|c|c|c|}
-\hline
-\text{Elemen} & R_2 \text{ Lama} & R_1 & R_2 - R_1 \text{ (Baris 2 Baru)} \\
-\hline
-(2,1) & 1 & 1 & 1 - 1 = 0 \\
-\hline
-(2,2) & -2 & \frac{3}{2} & -2 - \frac{3}{2} = -\frac{4}{2} - \frac{3}{2} = -\frac{7}{2} \\
-\hline
-(2,3) & 4 & -\frac{1}{2} & 4 - (-\frac{1}{2}) = 4 + \frac{1}{2} = \frac{8}{2} + \frac{1}{2} = \frac{9}{2} \\
-\hline
-(2,4) & 0 & \frac{1}{2} & 0 - \frac{1}{2} = -\frac{1}{2} \\
-\hline
-(2,5) & 1 & 0 & 1 - 0 = 1 \\
-\hline
-(2,6) & 0 & 0 & 0 - 0 = 0 \\
+\hline \text { Elemen } & R_2 \text { Lama } & R_1 & R_2-R_1 \text { (Baris 2 Baru) } \\
+\hline(2,1) & 1 & 1 & 1-1=0 \\
+\hline(2,2) & -2 & \frac{3}{2} & -2-\frac{3}{2}=-\frac{4}{2}-\frac{3}{2}=-\frac{7}{2} \\
+\hline(2,3) & 4 & -\frac{1}{2} & 4-\left(-\frac{1}{2}\right)=4+\frac{1}{2}=\frac{8}{2}+\frac{1}{2}=\frac{9}{2} \\
+\hline(2,4) & 0 & \frac{1}{2} & 0-\frac{1}{2}=-\frac{1}{2} \\
+\hline(2,5) & 1 & 0 & 1-0=1 \\
+\hline(2,6) & 0 & 0 & 0-0=0 \\
 \hline
 \end{array}
-
+\end{equation}
+$$
 
 Hasil baris 2 baru:
 $$
@@ -144,23 +139,20 @@ $$
 Perhitungan Baris 3 Baru ( $\mathbf{R}_3$ )
 Setiap elemen baris $\mathbf{3}$ dikurangi $\mathbf{3 \times}$ baris 1 .
 
+$$
+\begin{equation}
 \begin{array}{|c|c|c|c|}
-\hline
-\text{Elemen} & R_3 \text{ Lama} & 3 \times R_1 & R_3 - 3R_1 \text{ (Baris 3 Baru)} \\
-\hline
-(3,1) & 3 & 3 \times 1 = 3 & 3 - 3 = 0 \\
-\hline
-(3,2) & 1 & 3 \times \frac{3}{2} = \frac{9}{2} & 1 - \frac{9}{2} = \frac{2}{2} - \frac{9}{2} = -\frac{7}{2} \\
-\hline
-(3,3) & 2 & 3 \times (-\frac{1}{2}) = -\frac{3}{2} & 2 - (-\frac{3}{2}) = 2 + \frac{3}{2} = \frac{4}{2} + \frac{3}{2} = \frac{11}{2} \\
-\hline
-(3,4) & 0 & 3 \times \frac{1}{2} = \frac{3}{2} & 0 - \frac{3}{2} = -\frac{3}{2} \\
-\hline
-(3,5) & 0 & 3 \times 0 = 0 & 0 - 0 = 0 \\
-\hline
-(3,6) & 1 & 3 \times 0 = 0 & 1 - 0 = 1 \\
+\hline \text { Elemen } & R_3 \text { Lama } & 3 \times R_1 & R_3-3 R_1 \text { (Baris 3 Baru) } \\
+\hline(3,1) & 3 & 3 \times 1=3 & 3-3=0 \\
+\hline(3,2) & 1 & 3 \times \frac{3}{2}=\frac{9}{2} & 1-\frac{9}{2}=\frac{2}{2}-\frac{9}{2}=-\frac{7}{2} \\
+\hline(3,3) & 2 & 3 \times\left(-\frac{1}{2}\right)=-\frac{3}{2} & 2-\left(-\frac{3}{2}\right)=2+\frac{3}{2}=\frac{4}{2}+\frac{3}{2}=\frac{11}{2} \\
+\hline(3,4) & 0 & 3 \times \frac{1}{2}=\frac{3}{2} & 0-\frac{3}{2}=-\frac{3}{2} \\
+\hline(3,5) & 0 & 3 \times 0=0 & 0-0=0 \\
+\hline(3,6) & 1 & 3 \times 0=0 & 1-0=1 \\
 \hline
 \end{array}
+\end{equation}
+$$
 
 Hasil baris 3 baru:
 $$
@@ -189,25 +181,20 @@ Perhitungan Baris 2 Baru
 
 Kita lakukan pembagian untuk setiap elemen di baris 2:
 
-
+$$
+\begin{equation}
 \begin{array}{|c|c|c|c|}
-\hline
-\text{Elemen} & \text{Nilai Lama } R_2 & \text{Dibagi } -\frac{7}{2} & \text{Hasil Baru } R_2 \\
-\hline
-(2,1) & 0 & 0 \div\left(-\frac{7}{2}\right) & 0 \\
-\hline
-(2,2) & -\frac{7}{2} & \left(-\frac{7}{2}\right) \div\left(-\frac{7}{2}\right) & 1 \\
-\hline
-(2,3) & \frac{9}{2} & \left(\frac{9}{2}\right) \div\left(-\frac{7}{2}\right) & -\frac{9}{7} \\
-\hline
-(2,4) & -\frac{1}{2} & \left(-\frac{1}{2}\right) \div\left(-\frac{7}{2}\right) & \frac{1}{7} \\
-\hline
-(2,5) & 1 & 1 \div\left(-\frac{7}{2}\right) & -\frac{2}{7} \\
-\hline
-(2,6) & \mathbf{0} & 0 \div\left(-\frac{7}{2}\right) & 0 \\
+\hline \text { Elemen } & \text { Nilai Lama } R_2 & \text { Dibagi }-\frac{7}{2} & \text { Hasil Baru } R_2 \\
+\hline(2,1) & 0 & 0 \div\left(-\frac{7}{2}\right) & 0 \\
+\hline(2,2) & -\frac{7}{2} & \left(-\frac{7}{2}\right) \div\left(-\frac{7}{2}\right) & 1 \\
+\hline(2,3) & \frac{9}{2} & \left(\frac{9}{2}\right) \div\left(-\frac{7}{2}\right) & -\frac{9}{7} \\
+\hline(2,4) & -\frac{1}{2} & \left(-\frac{1}{2}\right) \div\left(-\frac{7}{2}\right) & \frac{1}{7} \\
+\hline(2,5) & 1 & 1 \div\left(-\frac{7}{2}\right) & -\frac{2}{7} \\
+\hline(2,6) & 0 & 0 \div\left(-\frac{7}{2}\right) & 0 \\
 \hline
 \end{array}
-
+\end{equation}
+$$
 
 Hasil baris 2 setelah pembagian:
 
@@ -234,23 +221,20 @@ $$
 
 Setiap elemen di baris 1 dikurangi $\frac{3}{2} \times$ baris 2 .
 
+$$
+\begin{equation}
 \begin{array}{|c|c|c|c|}
-\hline
-\text{Elemen} & \text{Nilai Lama } R_1 & \frac{3}{2} \times R_2 & R_1 - \frac{3}{2} R_2 \text{ (Baris 1 Baru)} \\
-\hline
-(1,1) & 1 & \frac{3}{2} \times 0 = 0 & 1 - 0 = 1 \\
-\hline
-(1,2) & \frac{3}{2} & \frac{3}{2} \times 1 = \frac{3}{2} & \frac{3}{2} - \frac{3}{2} = 0 \\
-\hline
-(1,3) & -\frac{1}{2} & \frac{3}{2} \times \left(-\frac{9}{7}\right) = -\frac{27}{14} & -\frac{1}{2} - \left(-\frac{27}{14}\right) = -\frac{7}{14} + \frac{27}{14} = \frac{20}{14} = \frac{10}{7} \\
-\hline
-(1,4) & \frac{1}{2} & \frac{3}{2} \times \frac{1}{7} = \frac{3}{14} & \frac{1}{2} - \frac{3}{14} = \frac{7}{14} - \frac{3}{14} = \frac{4}{14} = \frac{2}{7} \\
-\hline
-(1,5) & 0 & \frac{3}{2} \times \left(-\frac{2}{7}\right) = -\frac{6}{14} & 0 - \left(-\frac{6}{14}\right) = \frac{6}{14} = \frac{3}{7} \\
-\hline
-(1,6) & 0 & \frac{3}{2} \times 0 = 0 & 0 - 0 = 0 \\
+\hline \text { Elemen } & \text { Nilai Lama } R_1 & \frac{3}{2} \times R_2 & R_1-\frac{3}{2} R_2 \text { (Baris 1 Baru) } \\
+\hline(1,1) & 1 & \frac{3}{2} \times 0=0 & 1-0=1 \\
+\hline(1,2) & \frac{3}{2} & \frac{3}{2} \times 1=\frac{3}{2} & \frac{3}{2}-\frac{3}{2}=0 \\
+\hline(1,3) & -\frac{1}{2} & \frac{3}{2} \times\left(-\frac{9}{7}\right)=-\frac{27}{14} & -\frac{1}{2}-\left(-\frac{27}{14}\right)=-\frac{7}{14}+\frac{27}{14}=\frac{20}{14}=\frac{10}{7} \\
+\hline(1,4) & \frac{1}{2} & \frac{3}{2} \times \frac{1}{7}=\frac{3}{14} & \frac{1}{2}-\frac{3}{14}=\frac{7}{14}-\frac{3}{14}=\frac{4}{14}=\frac{2}{7} \\
+\hline(1,5) & 0 & \frac{3}{2} \times\left(-\frac{2}{7}\right)=-\frac{6}{14} & 0-\left(-\frac{6}{14}\right)=\frac{6}{14}=\frac{3}{7} \\
+\hline(1,6) & 0 & \frac{3}{2} \times 0=0 & 0-0=0 \\
 \hline
 \end{array}
+\end{equation}
+$$
 
 Hasil baris 1 baru:
 
@@ -262,6 +246,7 @@ $$
 
 Setiap elemen di baris 3 ditambah $\frac{7}{2} \times$ baris 2 .
 
+$$
 \begin{array}{|c|c|c|c|}
 \hline
 \text{Elemen} & \text{Nilai Lama } R_3 & \frac{7}{2} \times R_2 & R_3 + \frac{7}{2} R_2 \text{ (Baris 3 Baru)} \\
@@ -279,6 +264,7 @@ Setiap elemen di baris 3 ditambah $\frac{7}{2} \times$ baris 2 .
 (3,6) & 1 & \frac{7}{2} \times 0 = 0 & 1 + 0 = 1 \\
 \hline
 \end{array}
+$$
 
 Hasil baris 3 baru:
 $$
@@ -318,6 +304,7 @@ $$
 
 Untuk setiap elemen di baris 1:
 
+$$
 \begin{array}{|c|c|c|}
 \hline 
 \textbf{Elemen Lama } R_1 & \frac{10}{17} \times R_3 & \textbf{Hasil Baru } R_1 \\
@@ -335,6 +322,7 @@ Untuk setiap elemen di baris 1:
 (\mathbf{1}, \mathbf{6}): 0 & \frac{10}{17} \times 1=\frac{10}{17} & 0-\frac{10}{17}=-\frac{10}{17} \\
 \hline
 \end{array}
+$$
 
 Menyederhanakan elemen $(1,4)$ dan $(1,5):$
 $$
@@ -364,6 +352,7 @@ $$
 
 Untuk setiap elemen di baris 2:
 
+$$
 \begin{array}{|c|c|c|}
 \hline 
 \textbf{Elemen Lama } R_2 & \frac{9}{7} \times R_3 & \textbf{Hasil Baru } R_2 \\
@@ -381,6 +370,7 @@ Untuk setiap elemen di baris 2:
 (2,6): 0 & \frac{9}{7} \times 1 = \frac{9}{7} & 0 + \frac{9}{7} = \frac{9}{7} \\
 \hline
 \end{array}
+$$
 
 Sehingga, baris 2 yang baru adalah:
 $$
