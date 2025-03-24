@@ -325,6 +325,7 @@ $$
 $$
 
 Menyederhanakan elemen $(1,4)$ dan $(1,5):$
+
 $$
 \begin{aligned}
 & \frac{2}{7}-\frac{10}{17}=\frac{34}{119}-\frac{70}{119}=-\frac{36}{119} \\
@@ -333,6 +334,7 @@ $$
 $$
 
 Sehingga, baris 1 yang baru adalah:
+
 $$
 \left[\begin{array}{lll|lll}
 1 & 0 & 0 & -\frac{36}{119} & -\frac{19}{119} & -\frac{10}{17}
@@ -341,11 +343,13 @@ $$
 
 Langkah 2: Menghilangkan Elemen (2,3)
 Dari baris 2:
+
 $$
 R_2 \rightarrow R_2+\left(\frac{9}{7} \times R_3\right)
 $$
 
-Hitung setiap elemen baru pada baris 2:
+Hitung setiap elemen baru pada baris 2: 
+
 $$
 R_2=R_2+\frac{9}{7} R_3
 $$
@@ -353,26 +357,22 @@ $$
 Untuk setiap elemen di baris 2:
 
 $$
-\begin{array}{|c|c|c|}
-\hline 
-\textbf{Elemen Lama } R_2 & \frac{9}{7} \times R_3 & \textbf{Hasil Baru } R_2 \\
-\hline
-(2,1): 0 & 0 & 0 \\
-\hline
-(2,2): 1 & 0 & 1 \\
-\hline
-(2,3): -\frac{9}{7} & \frac{9}{7} \times 1 = \frac{9}{7} & -\frac{9}{7}+\frac{9}{7} = 0 \\
-\hline
-(2,4): \frac{1}{7} & \frac{9}{7} \times (-1) = -\frac{9}{7} & \frac{1}{7} - \frac{9}{7} = -\frac{8}{7} \\
-\hline
-(2,5): -\frac{2}{7} & \frac{9}{7} \times (-1) = -\frac{9}{7} & -\frac{2}{7} - \frac{9}{7} = -\frac{11}{7} \\
-\hline
-(2,6): 0 & \frac{9}{7} \times 1 = \frac{9}{7} & 0 + \frac{9}{7} = \frac{9}{7} \\
+\begin{equation}
+\begin{array}{|l|l|l|}
+\hline \text { Elemen Lama } R_2 & \frac{9}{7} \times R_3 & \text { Hasil Baru } R_2 \\
+\hline(2,1): 0 & 0 & 0 \\
+\hline(2,2): 1 & 0 & 1 \\
+\hline(2,3):-\frac{9}{7} & \frac{9}{7} \times 1=\frac{9}{7} & -\frac{9}{7}+\frac{9}{7}=0 \\
+\hline(2,4): \frac{1}{7} & \frac{9}{7} \times(-1)=-\frac{9}{7} & \frac{1}{7}-\frac{9}{7}=-\frac{8}{7} \\
+\hline(2,5):-\frac{2}{7} & \frac{9}{7} \times(-1)=-\frac{9}{7} & -\frac{2}{7}-\frac{9}{7}=-\frac{11}{7} \\
+\hline(2,6): 0 & \frac{9}{7} \times 1=\frac{9}{7} & 0+\frac{9}{7}=\frac{9}{7} \\
 \hline
 \end{array}
+\end{equation}
 $$
 
 Sehingga, baris 2 yang baru adalah:
+
 $$
 \left[\begin{array}{lll|lll}
 0 & 1 & 0 & -\frac{8}{7} & -\frac{11}{7} & \frac{9}{7}
@@ -380,7 +380,8 @@ $$
 $$
 
 Hasil Akhir Setelah Transformasi
-Setelah menghilangkan elemen $(1,3)$ dan $(2,3)$, matriks menjadi:
+Setelah menghilangkan elemen $(1,3)$ dan $(2,3)$ , matriks menjadi:
+
 $$
 \left[\begin{array}{cccccc}
 1 & 0 & 0 & \left\lvert\,-\frac{36}{119}\right. & -\frac{19}{119} & -\frac{10}{17} \\
