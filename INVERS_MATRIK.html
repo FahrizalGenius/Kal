@@ -367,21 +367,15 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks-invers">Definisi Matriks Invers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-suatu-matriks-memiliki-invers">Syarat Suatu Matriks Memiliki Invers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-3-persamaan">MATRIK 3 PERSAMAAN</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-matriks-a">1. Diketahui Matriks <span class="math notranslate nohighlight">\({A}\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-elemen-1-1-menjadi-1">2. Membuat Elemen <span class="math notranslate nohighlight">\((1,1)\)</span> Menjadi 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghilangkan-elemen-kolom-1-di-baris-2-dan-3">3. Menghilangkan Elemen Kolom 1 di Baris 2 dan 3</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menjadikan-elemen-2-1-0">Langkah 1: Menjadikan Elemen (2,1) = 0</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menjadikan-elemen-3-1-0">Langkah 2: Menjadikan Elemen (3,1) = 0</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-matriks-setelah-eliminasi">Hasil matriks setelah eliminasi:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-elemen-2-2-menjadi-1">4. Membuat Elemen <span class="math notranslate nohighlight">\((2,2)\)</span> Menjadi 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghilangkan-elemen-kolom-2-di-baris-1-dan-3">5. Menghilangkan Elemen Kolom 2 di Baris 1 dan 3</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-baris-1-baru">Perhitungan Baris 1 Baru</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-baris-3-baru">Perhitungan Baris 3 Baru</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengubah-elemen-1-3-dan-2-3-menjadi-0">6. Mengubah Elemen (1,3) dan (2,3) menjadi 0</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-persamaan-3x3">Buat Persamaan 3x3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-bentuk-augmented-matrix-a-mid-i">Langkah 2: Bentuk Augmented Matrix   <span class="math notranslate nohighlight">\([A \mid I]\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-buat-elemen-1-1-menjadi-1">Langkah 3: Buat Elemen (1,1) Menjadi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-nol-kan-elemen-di-bawah-1-1">Langkah 4: Nol-kan Elemen di Bawah (1,1)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-buat-elemen-2-2-menjadi-1">Langkah 5: Buat Elemen <span class="math notranslate nohighlight">\((2,2)\)</span> Menjadi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-nol-kan-elemen-di-bawah-2-2">Langkah 6: Nol-kan Elemen di Bawah (2,2)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-7-buat-elemen-3-3-menjadi-1">Langkah 7: Buat Elemen (3,3) Menjadi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-8-nol-kan-elemen-di-atas-3-3">Langkah 8: Nol-kan Elemen di Atas (3,3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-9-hitung-a-1-times-b">Langkah 9: Hitung <span class="math notranslate nohighlight">\(A^{-1} \times B\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -435,335 +429,202 @@ I=\left[\begin{array}{lll}
 </section>
 <section id="matrik-3-persamaan">
 <h2>MATRIK 3 PERSAMAAN<a class="headerlink" href="#matrik-3-persamaan" title="Link to this heading">#</a></h2>
+<section id="buat-persamaan-3x3">
+<h3>Buat Persamaan 3x3<a class="headerlink" href="#buat-persamaan-3x3" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \left\{\begin{array}{l}
-2x+3 y- z=5 \\
-x-2y+4 z=-3 \\
-3 x+y+2z=7
+2 x-y+0 z=2 \\
+x+3 y-z=1 \\
+0 x+2 y+4 z=0
 \end{array}\right.
 \end{split}\]</div>
-<section id="diketahui-matriks-a">
-<h3>1. Diketahui Matriks <span class="math notranslate nohighlight">\({A}\)</span><a class="headerlink" href="#diketahui-matriks-a" title="Link to this heading">#</a></h3>
-<p>Kita memiliki matriks <span class="math notranslate nohighlight">\(A\)</span> :</p>
+<p>Dari sistem ini, kita bisa tulis dalam bentuk matriks sebagai:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A=\left[\begin{array}{ccc}
-2 &amp; 3 &amp; -1 \\
-1 &amp; -2 &amp; 4 \\
-3 &amp; 1 &amp; 2
+2 &amp; -1 &amp; 0 \\
+1 &amp; 3 &amp; -1 \\
+0 &amp; 2 &amp; 4
 \end{array}\right]
 \end{split}\]</div>
-<p>Untuk mencari invers <span class="math notranslate nohighlight">\(\left(A^{-1}\right)\)</span>, kita buat matriks augmented dengan identitas:</p>
+<p>dan</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-[A \mid I]=\left[\begin{array}{cccccc}
-2 &amp; 3 &amp; -1 &amp; \mid 1 &amp; 0 &amp; 0 \\
-1 &amp; -2 &amp; 4 &amp; \mid 0 &amp; 1 &amp; 0 \\
-3 &amp; 1 &amp; 2 &amp; \mid 0 &amp; 0 &amp; 1
+B=\left[\begin{array}{l}
+2 \\
+1 \\
+0
 \end{array}\right]
 \end{split}\]</div>
-<p>Tujuan: Kita harus mengubah bagian kiri menjadi identitas <span class="math notranslate nohighlight">\(I\)</span>, dan bagian kanan akan menjadi invers <span class="math notranslate nohighlight">\(A^{-1}\)</span>.</p>
+<p>Kita ingin mencari invers <span class="math notranslate nohighlight">\(A^{-1}\)</span> dan menunjukkan bahwa:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A^{-1} \times B=\left[\begin{array}{l}
+1 \\
+0 \\
+0
+\end{array}\right]
+\end{split}\]</div>
+<p>Sehingga solusinya adalah</p>
+<p><span class="math notranslate nohighlight">\(x=1, y=0, z=0\)</span>.</p>
 </section>
-<section id="membuat-elemen-1-1-menjadi-1">
-<h3>2. Membuat Elemen <span class="math notranslate nohighlight">\((1,1)\)</span> Menjadi 1<a class="headerlink" href="#membuat-elemen-1-1-menjadi-1" title="Link to this heading">#</a></h3>
-<p>Saat ini, elemen pertama <span class="math notranslate nohighlight">\((1,1)\)</span> adalah 2, jadi kita bagi seluruh baris 1 dengan 2:</p>
+<section id="langkah-2-bentuk-augmented-matrix-a-mid-i">
+<h3>Langkah 2: Bentuk Augmented Matrix   <span class="math notranslate nohighlight">\([A \mid I]\)</span><a class="headerlink" href="#langkah-2-bentuk-augmented-matrix-a-mid-i" title="Link to this heading">#</a></h3>
+<p>Kita gabungkan <span class="math notranslate nohighlight">\(A\)</span> dengan matriks identitas <span class="math notranslate nohighlight">\(I\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+[A \mid I]=\left[\begin{array}{ccc|ccc}
+2 &amp; -1 &amp; 0 &amp; \mid 1 &amp; 0 &amp; 0 \\
+1 &amp; 3 &amp; -1 &amp; \mid 0 &amp; 1 &amp; 0 \\
+0 &amp; 2 &amp; 4 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right]
+\end{split}\]</div>
+</section>
+<section id="langkah-3-buat-elemen-1-1-menjadi-1">
+<h3>Langkah 3: Buat Elemen (1,1) Menjadi 1<a class="headerlink" href="#langkah-3-buat-elemen-1-1-menjadi-1" title="Link to this heading">#</a></h3>
+<p>Saat ini, elemen pertama (1,1) adalah 2. Kita ubah menjadi 1 dengan membagi baris pertama dengan 2:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{gathered}
-R_1 \rightarrow \frac{1}{2} R_1 \\
+R_1 \leftarrow \frac{1}{2} R_1 \\
 {\left[\begin{array}{ccc|ccc}
-1 &amp; \frac{3}{2} &amp; -\frac{1}{2} &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
-1 &amp; -2 &amp; 4 &amp; 0 &amp; 1 &amp; 0 \\
-3 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; 1
+1 &amp; -\frac{1}{2} &amp; 0 &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
+1 &amp; 3 &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 2 &amp; 4 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right]}
 \end{gathered}
 \end{split}\]</div>
 </section>
-<section id="menghilangkan-elemen-kolom-1-di-baris-2-dan-3">
-<h3>3. Menghilangkan Elemen Kolom 1 di Baris 2 dan 3<a class="headerlink" href="#menghilangkan-elemen-kolom-1-di-baris-2-dan-3" title="Link to this heading">#</a></h3>
-<p>Kita buat elemen <span class="math notranslate nohighlight">\((2,1)\)</span> dan <span class="math notranslate nohighlight">\((3,1)\)</span> menjadi 0.</p>
+<section id="langkah-4-nol-kan-elemen-di-bawah-1-1">
+<h3>Langkah 4: Nol-kan Elemen di Bawah (1,1)<a class="headerlink" href="#langkah-4-nol-kan-elemen-di-bawah-1-1" title="Link to this heading">#</a></h3>
+<p>Kita nol-kan elemen <span class="math notranslate nohighlight">\((2,1)\)</span> menggunakan operasi baris:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+R_2 \leftarrow R_2-R_1 \\
+{\left[\begin{array}{cccccc}
+1 &amp; -\frac{1}{2} &amp; 0 &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
+0 &amp; \frac{7}{2} &amp; -1 &amp; -\frac{1}{2} &amp; 1 &amp; 0 \\
+0 &amp; 2 &amp; 4 &amp; \mid 0 &amp; 0 &amp; 1
+\end{array}\right]}
+\end{gathered}
+\end{split}\]</div>
+</section>
+<section id="langkah-5-buat-elemen-2-2-menjadi-1">
+<h3>Langkah 5: Buat Elemen <span class="math notranslate nohighlight">\((2,2)\)</span> Menjadi 1<a class="headerlink" href="#langkah-5-buat-elemen-2-2-menjadi-1" title="Link to this heading">#</a></h3>
+<p>Saat ini, elemen <span class="math notranslate nohighlight">\((2,2)\)</span> adalah <span class="math notranslate nohighlight">\(\frac{7}{2}\)</span>. Kita ubah menjadi 1 dengan membagi baris kedua dengan <span class="math notranslate nohighlight">\(\frac{7}{2}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+R_2 \leftarrow \frac{2}{7} R_2 \\
+{\left[\begin{array}{cccccc}
+1 &amp; -\frac{1}{2} &amp; 0 &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -\frac{2}{7} &amp; \left\lvert\,-\frac{1}{7}\right. &amp; \frac{2}{7} &amp; 0 \\
+0 &amp; 2 &amp; 4 &amp; \mid 0 &amp; 0 &amp; 1
+\end{array}\right]}
+\end{gathered}
+\end{split}\]</div>
+</section>
+<section id="langkah-6-nol-kan-elemen-di-bawah-2-2">
+<h3>Langkah 6: Nol-kan Elemen di Bawah (2,2)<a class="headerlink" href="#langkah-6-nol-kan-elemen-di-bawah-2-2" title="Link to this heading">#</a></h3>
+<p>Kita nol-kan elemen (3,2):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+R_3 \leftarrow R_3-2 R_2 \\
+{\left[\begin{array}{cccccc}
+1 &amp; -\frac{1}{2} &amp; 0 &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -\frac{2}{7} &amp; \left\lvert\,-\frac{1}{7}\right. &amp; \frac{2}{7} &amp; 0 \\
+0 &amp; 0 &amp; \frac{30}{7} &amp; \left\lvert\, \frac{2}{7}\right. &amp; -\frac{4}{7} &amp; 1
+\end{array}\right]}
+\end{gathered}
+\end{split}\]</div>
+</section>
+<section id="langkah-7-buat-elemen-3-3-menjadi-1">
+<h3>Langkah 7: Buat Elemen (3,3) Menjadi 1<a class="headerlink" href="#langkah-7-buat-elemen-3-3-menjadi-1" title="Link to this heading">#</a></h3>
+<p>Saat ini, elemen <span class="math notranslate nohighlight">\((3,3)\)</span> adalah <span class="math notranslate nohighlight">\(\frac{30}{7}\)</span>. Kita ubah menjadi 1 dengan membagi baris ketiga dengan <span class="math notranslate nohighlight">\(\frac{30}{7}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+R_3 \leftarrow \frac{7}{30} R_3 \\
+{\left[\begin{array}{cccccc}
+1 &amp; -\frac{1}{2} &amp; 0 &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -\frac{2}{7} &amp; -\frac{1}{7} &amp; \frac{2}{7} &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; \left\lvert\, \frac{1}{15}\right. &amp; -\frac{2}{15} &amp; \frac{7}{30}
+\end{array}\right]}
+\end{gathered}
+\end{split}\]</div>
+</section>
+<section id="langkah-8-nol-kan-elemen-di-atas-3-3">
+<h3>Langkah 8: Nol-kan Elemen di Atas (3,3)<a class="headerlink" href="#langkah-8-nol-kan-elemen-di-atas-3-3" title="Link to this heading">#</a></h3>
+<p>Kita nol-kan elemen <span class="math notranslate nohighlight">\((1,2)\)</span> dan <span class="math notranslate nohighlight">\((2,3)\)</span>.</p>
 <ul class="simple">
-<li><p>Baris <span class="math notranslate nohighlight">\(2 \rightarrow R_2=R_2-R_1\)</span></p></li>
-<li><p>Baris <span class="math notranslate nohighlight">\(3 \rightarrow R_3=R_3-3 R_1\)</span></p></li>
+<li><p>Untuk baris (1,2):</p></li>
 </ul>
-<section id="langkah-1-menjadikan-elemen-2-1-0">
-<h4>Langkah 1: Menjadikan Elemen (2,1) = 0<a class="headerlink" href="#langkah-1-menjadikan-elemen-2-1-0" title="Link to this heading">#</a></h4>
-<p>Elemen ( 2,1 ) saat ini adalah 1.
-Untuk mengubahnya menjadi 0, kita lakukan operasi baris:</p>
 <div class="math notranslate nohighlight">
 \[
-R_2=R_2-R_1
+R_1 \leftarrow R_1+\frac{1}{2} R_2
 \]</div>
-<p>Perhitungan Baris 2 Baru ( <span class="math notranslate nohighlight">\(\mathbf{R}_{\mathbf{2}}\)</span> )
-Setiap elemen baris 2 dikurangi baris 1.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } &amp; R_2 \text { Lama } &amp; R_1 &amp; R_2-R_1 \text { (Baris 2 Baru) } \\
-\hline(2,1) &amp; 1 &amp; 1 &amp; 1-1=0 \\
-\hline(2,2) &amp; -2 &amp; \frac{3}{2} &amp; -2-\frac{3}{2}=-\frac{4}{2}-\frac{3}{2}=-\frac{7}{2} \\
-\hline(2,3) &amp; 4 &amp; -\frac{1}{2} &amp; 4-\left(-\frac{1}{2}\right)=4+\frac{1}{2}=\frac{8}{2}+\frac{1}{2}=\frac{9}{2} \\
-\hline(2,4) &amp; 0 &amp; \frac{1}{2} &amp; 0-\frac{1}{2}=-\frac{1}{2} \\
-\hline(2,5) &amp; 1 &amp; 0 &amp; 1-0=1 \\
-\hline(2,6) &amp; 0 &amp; 0 &amp; 0-0=0 \\
-\hline
-\end{array}
-\end{equation}
-\end{split}\]</div>
-<p>Hasil baris 2 baru:
-$<span class="math notranslate nohighlight">\(
-\left(0,-\frac{7}{2}, \frac{9}{2}, \left\lvert\,-\frac{1}{2}\right., 1,0\right)
-\)</span>$</p>
-</section>
-<section id="langkah-2-menjadikan-elemen-3-1-0">
-<h4>Langkah 2: Menjadikan Elemen (3,1) = 0<a class="headerlink" href="#langkah-2-menjadikan-elemen-3-1-0" title="Link to this heading">#</a></h4>
-<p>Elemen ( 3,1 ) saat ini adalah 3.
-Untuk mengubahnya menjadi 0, kita lakukan operasi baris:</p>
+<ul class="simple">
+<li><p>Untuk baris (2,3):</p></li>
+</ul>
 <div class="math notranslate nohighlight">
 \[
-R_3=R_3-3 R_1
+R_2 \leftarrow R_2+\frac{2}{7} R_3
 \]</div>
-<p>Perhitungan Baris 3 Baru ( <span class="math notranslate nohighlight">\(\mathbf{R}_3\)</span> )
-Setiap elemen baris <span class="math notranslate nohighlight">\(\mathbf{3}\)</span> dikurangi <span class="math notranslate nohighlight">\(\mathbf{3 \times}\)</span> baris 1 .</p>
+<ul class="simple">
+<li><p>Untuk baris (1,3)</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } &amp; R_3 \text { Lama } &amp; 3 \times R_1 &amp; R_3-3 R_1 \text { (Baris 3 Baru) } \\
-\hline(3,1) &amp; 3 &amp; 3 \times 1=3 &amp; 3-3=0 \\
-\hline(3,2) &amp; 1 &amp; 3 \times \frac{3}{2}=\frac{9}{2} &amp; 1-\frac{9}{2}=\frac{2}{2}-\frac{9}{2}=-\frac{7}{2} \\
-\hline(3,3) &amp; 2 &amp; 3 \times\left(-\frac{1}{2}\right)=-\frac{3}{2} &amp; 2-\left(-\frac{3}{2}\right)=2+\frac{3}{2}=\frac{4}{2}+\frac{3}{2}=\frac{11}{2} \\
-\hline(3,4) &amp; 0 &amp; 3 \times \frac{1}{2}=\frac{3}{2} &amp; 0-\frac{3}{2}=-\frac{3}{2} \\
-\hline(3,5) &amp; 0 &amp; 3 \times 0=0 &amp; 0-0=0 \\
-\hline(3,6) &amp; 1 &amp; 3 \times 0=0 &amp; 1-0=1 \\
-\hline
-\end{array}
-\end{equation}
-\end{split}\]</div>
-<p>Hasil baris 3 baru:
-$<span class="math notranslate nohighlight">\(
-\left(0,-\frac{7}{2}, \frac{11}{2}, \left\lvert\,-\frac{3}{2}\right., 0,1\right)
-\)</span>$</p>
-</section>
-<section id="hasil-matriks-setelah-eliminasi">
-<h4>Hasil matriks setelah eliminasi:<a class="headerlink" href="#hasil-matriks-setelah-eliminasi" title="Link to this heading">#</a></h4>
+\[
+R_1 \leftarrow R_1 + \frac{1}{7} R_3
+\]</div>
+<p>Hasil akhirnya:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \left[\begin{array}{cccccc}
-1 &amp; \frac{3}{2} &amp; -\frac{1}{2} &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
-0 &amp; -\frac{7}{2} &amp; \frac{9}{2} &amp; \left\lvert\,-\frac{1}{2}\right. &amp; 1 &amp; 0 \\
-0 &amp; -\frac{7}{2} &amp; \frac{11}{2} &amp; -\frac{3}{2} &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; \left\lvert\, \frac{8}{15}\right. &amp; -\frac{1}{5} &amp; \frac{7}{20} \\
+0 &amp; 1 &amp; 0 &amp; \left\lvert\,-\frac{1}{5}\right. &amp; \frac{3}{5} &amp; -\frac{7}{10} \\
+0 &amp; 0 &amp; 1 &amp; \left\lvert\, \frac{1}{15}\right. &amp; -\frac{2}{15} &amp; \frac{7}{30}
+\end{array}\right]
+\end{split}\]</div>
+<p>Maka inversnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A^{-1}=\left[\begin{array}{ccc}
+\frac{8}{15} &amp; -\frac{1}{5} &amp; \frac{7}{20} \\
+-\frac{1}{5} &amp; \frac{3}{5} &amp; -\frac{7}{10} \\
+\frac{1}{15} &amp; -\frac{2}{15} &amp; \frac{7}{30}
 \end{array}\right]
 \end{split}\]</div>
 </section>
-</section>
-<section id="membuat-elemen-2-2-menjadi-1">
-<h3>4. Membuat Elemen <span class="math notranslate nohighlight">\((2,2)\)</span> Menjadi 1<a class="headerlink" href="#membuat-elemen-2-2-menjadi-1" title="Link to this heading">#</a></h3>
-<p>Saat ini, elemen <span class="math notranslate nohighlight">\((2,2)\)</span> adalah <span class="math notranslate nohighlight">\(-\frac{7}{2}\)</span>. Untuk menjadikannya 1 , kita bagi baris 2 dengan <span class="math notranslate nohighlight">\(-\frac{7}{2}\)</span> :</p>
-<div class="math notranslate nohighlight">
-\[
-R_2 \rightarrow \frac{2}{-7} R_2
-\]</div>
-<p>Perhitungan Baris 2 Baru</p>
-<p>Kita lakukan pembagian untuk setiap elemen di baris 2:</p>
+<section id="langkah-9-hitung-a-1-times-b">
+<h3>Langkah 9: Hitung <span class="math notranslate nohighlight">\(A^{-1} \times B\)</span><a class="headerlink" href="#langkah-9-hitung-a-1-times-b" title="Link to this heading">#</a></h3>
+<p>Dengan <span class="math notranslate nohighlight">\(B=\left[\begin{array}{l}2 \\ 1 \\ 0\end{array}\right]\)</span>  , kita hitung:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } &amp; \text { Nilai Lama } R_2 &amp; \text { Dibagi }-\frac{7}{2} &amp; \text { Hasil Baru } R_2 \\
-\hline(2,1) &amp; 0 &amp; 0 \div\left(-\frac{7}{2}\right) &amp; 0 \\
-\hline(2,2) &amp; -\frac{7}{2} &amp; \left(-\frac{7}{2}\right) \div\left(-\frac{7}{2}\right) &amp; 1 \\
-\hline(2,3) &amp; \frac{9}{2} &amp; \left(\frac{9}{2}\right) \div\left(-\frac{7}{2}\right) &amp; -\frac{9}{7} \\
-\hline(2,4) &amp; -\frac{1}{2} &amp; \left(-\frac{1}{2}\right) \div\left(-\frac{7}{2}\right) &amp; \frac{1}{7} \\
-\hline(2,5) &amp; 1 &amp; 1 \div\left(-\frac{7}{2}\right) &amp; -\frac{2}{7} \\
-\hline(2,6) &amp; 0 &amp; 0 \div\left(-\frac{7}{2}\right) &amp; 0 \\
-\hline
-\end{array}
-\end{equation}
+A^{-1} \times B=\left[\begin{array}{ccc}
+\frac{8}{15} &amp; -\frac{1}{5} &amp; \frac{7}{20} \\
+-\frac{1}{5} &amp; \frac{3}{5} &amp; -\frac{7}{10} \\
+\frac{1}{15} &amp; -\frac{2}{15} &amp; \frac{7}{30}
+\end{array}\right] \times\left[\begin{array}{l}
+2 \\
+1 \\
+0
+\end{array}\right]
 \end{split}\]</div>
-<p>Hasil baris 2 setelah pembagian:</p>
-<div class="math notranslate nohighlight">
-\[
-\left(0,1,-\frac{9}{7}, \left\lvert\, \frac{1}{7}\right.,-\frac{2}{7}, 0\right)
-\]</div>
 <p>Hasilnya:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\left[\begin{array}{cccccc}
-1 &amp; \frac{3}{2} &amp; -\frac{1}{2} &amp; \left\lvert\, \frac{1}{2}\right. &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; -\frac{9}{7} &amp; \left\lvert\, \frac{1}{7}\right. &amp; -\frac{2}{7} &amp; 0 \\
-0 &amp; -\frac{7}{2} &amp; \frac{11}{2} &amp; \left\lvert\,-\frac{3}{2}\right. &amp; 0 &amp; 1
-\end{array}\right]
-\end{split}\]</div>
-</section>
-<section id="menghilangkan-elemen-kolom-2-di-baris-1-dan-3">
-<h3>5. Menghilangkan Elemen Kolom 2 di Baris 1 dan 3<a class="headerlink" href="#menghilangkan-elemen-kolom-2-di-baris-1-dan-3" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Baris <span class="math notranslate nohighlight">\(1 \rightarrow R_1=R_1-\frac{3}{2} R_2\)</span></p></li>
-<li><p>Baris <span class="math notranslate nohighlight">\(3 \rightarrow R_3=R_3+\frac{7}{2} R_2\)</span></p></li>
-</ul>
-<section id="perhitungan-baris-1-baru">
-<h4>Perhitungan Baris 1 Baru<a class="headerlink" href="#perhitungan-baris-1-baru" title="Link to this heading">#</a></h4>
-<p>Setiap elemen di baris 1 dikurangi <span class="math notranslate nohighlight">\(\frac{3}{2} \times\)</span> baris 2 .</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } &amp; \text { Nilai Lama } R_1 &amp; \frac{3}{2} \times R_2 &amp; R_1-\frac{3}{2} R_2 \text { (Baris 1 Baru) } \\
-\hline(1,1) &amp; 1 &amp; \frac{3}{2} \times 0=0 &amp; 1-0=1 \\
-\hline(1,2) &amp; \frac{3}{2} &amp; \frac{3}{2} \times 1=\frac{3}{2} &amp; \frac{3}{2}-\frac{3}{2}=0 \\
-\hline(1,3) &amp; -\frac{1}{2} &amp; \frac{3}{2} \times\left(-\frac{9}{7}\right)=-\frac{27}{14} &amp; -\frac{1}{2}-\left(-\frac{27}{14}\right)=-\frac{7}{14}+\frac{27}{14}=\frac{20}{14}=\frac{10}{7} \\
-\hline(1,4) &amp; \frac{1}{2} &amp; \frac{3}{2} \times \frac{1}{7}=\frac{3}{14} &amp; \frac{1}{2}-\frac{3}{14}=\frac{7}{14}-\frac{3}{14}=\frac{4}{14}=\frac{2}{7} \\
-\hline(1,5) &amp; 0 &amp; \frac{3}{2} \times\left(-\frac{2}{7}\right)=-\frac{6}{14} &amp; 0-\left(-\frac{6}{14}\right)=\frac{6}{14}=\frac{3}{7} \\
-\hline(1,6) &amp; 0 &amp; \frac{3}{2} \times 0=0 &amp; 0-0=0 \\
-\hline
-\end{array}
-\end{equation}
-\end{split}\]</div>
-<p>Hasil baris 1 baru:</p>
-<div class="math notranslate nohighlight">
-\[
-\left(1,0, \frac{10}{7}, \left\lvert\, \frac{2}{7}\right., \frac{3}{7}, 0\right)
-\]</div>
-</section>
-<section id="perhitungan-baris-3-baru">
-<h4>Perhitungan Baris 3 Baru<a class="headerlink" href="#perhitungan-baris-3-baru" title="Link to this heading">#</a></h4>
-<p>Setiap elemen di baris 3 ditambah <span class="math notranslate nohighlight">\(\frac{7}{2} \times\)</span> baris 2 .</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{array}{|c|c|c|c|}
-\hline
-\text{Elemen} &amp; \text{Nilai Lama } R_3 &amp; \frac{7}{2} \times R_2 &amp; R_3 + \frac{7}{2} R_2 \text{ (Baris 3 Baru)} \\
-\hline
-(3,1) &amp; 0 &amp; \frac{7}{2} \times 0 = 0 &amp; 0 + 0 = 0 \\
-\hline
-(3,2) &amp; -\frac{7}{2} &amp; \frac{7}{2} \times 1 = \frac{7}{2} &amp; -\frac{7}{2} + \frac{7}{2} = 0 \\
-\hline
-(3,3) &amp; \frac{11}{2} &amp; \frac{7}{2} \times \left(-\frac{9}{7}\right) = -\frac{63}{14} = -\frac{9}{2} &amp; \frac{11}{2} - \frac{9}{2} = \frac{2}{2} = 1 \\
-\hline
-(3,4) &amp; -\frac{3}{2} &amp; \frac{7}{2} \times \frac{1}{7} = \frac{1}{2} &amp; -\frac{3}{2} + \frac{1}{2} = -\frac{2}{2} = -1 \\
-\hline
-(3,5) &amp; 0 &amp; \frac{7}{2} \times \left(-\frac{2}{7}\right) = -\frac{14}{14} = -1 &amp; 0 - 1 = -1 \\
-\hline
-(3,6) &amp; 1 &amp; \frac{7}{2} \times 0 = 0 &amp; 1 + 0 = 1 \\
-\hline
-\end{array}
-\end{split}\]</div>
-<p>Hasil baris 3 baru:
-$<span class="math notranslate nohighlight">\(
-(0,0,1, \mid-1,-1,1)
-\)</span>$</p>
-<p>Hasil matriks:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\left[\begin{array}{cccccc}
-1 &amp; 0 &amp; \frac{10}{17} &amp; \left\lvert\, \frac{2}{7}\right. &amp; \frac{3}{7} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{9}{7} &amp; \left\lvert\, \frac{1}{7}\right. &amp; -\frac{2}{7} &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; \left\lvert\,-1\right. &amp; -1 &amp; 1
-\end{array}\right]
-\end{split}\]</div>
-</section>
-</section>
-<section id="mengubah-elemen-1-3-dan-2-3-menjadi-0">
-<h3>6. Mengubah Elemen (1,3) dan (2,3) menjadi 0<a class="headerlink" href="#mengubah-elemen-1-3-dan-2-3-menjadi-0" title="Link to this heading">#</a></h3>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\left[\begin{array}{cccccc}
-1 &amp; 0 &amp; \frac{10}{17} &amp; \left\lvert\, \frac{2}{7}\right. &amp; \frac{3}{7} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{9}{7} &amp; \left\lvert\, \frac{1}{7}\right. &amp; -\frac{2}{7} &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; \left\lvert\,-1\right. &amp; -1 &amp; 1
-\end{array}\right]
-\end{split}\]</div>
-<p>Langkah 1: Menghilangkan Elemen (1,3)
-Dari baris 1:</p>
-<div class="math notranslate nohighlight">
-\[
-R_1 \rightarrow R_1-\left(\frac{10}{17} \times R_3\right)
-\]</div>
-<p>Hitung setiap elemen baru pada baris 1:
-$<span class="math notranslate nohighlight">\(
-R_1=R_1-\frac{10}{17} R_3
-\)</span>$</p>
-<p>Untuk setiap elemen di baris 1:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{array}{|c|c|c|}
-\hline 
-\textbf{Elemen Lama } R_1 &amp; \frac{10}{17} \times R_3 &amp; \textbf{Hasil Baru } R_1 \\
-\hline
-(\mathbf{1 , 1 )}: 1 &amp; 0 &amp; 1 \\
-\hline
-(\mathbf{1}, \mathbf{2}): 0 &amp; 0 &amp; 0 \\
-\hline
-(\mathbf{1}, \mathbf{3}): \frac{10}{17} &amp; \frac{10}{17} \times 1=\frac{10}{17} &amp; \frac{10}{17}-\frac{10}{17}=0 \\
-\hline
-(\mathbf{1 , 4 )}: \frac{2}{7} &amp; \frac{10}{17} \times(-1)=-\frac{10}{17} &amp; \frac{2}{7}-\frac{10}{17} \\
-\hline
-(\mathbf{1}, \mathbf{5}): \frac{3}{7} &amp; \frac{10}{17} \times(-1)=-\frac{10}{17} &amp; \frac{3}{7}-\frac{10}{17} \\
-\hline
-(\mathbf{1}, \mathbf{6}): 0 &amp; \frac{10}{17} \times 1=\frac{10}{17} &amp; 0-\frac{10}{17}=-\frac{10}{17} \\
-\hline
-\end{array}
-\end{split}\]</div>
-<p>Menyederhanakan elemen <span class="math notranslate nohighlight">\((1,4)\)</span> dan <span class="math notranslate nohighlight">\((1,5):\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-&amp; \frac{2}{7}-\frac{10}{17}=\frac{34}{119}-\frac{70}{119}=-\frac{36}{119} \\
-&amp; \frac{3}{7}-\frac{10}{17}=\frac{51}{119}-\frac{70}{119}=-\frac{19}{119}
-\end{aligned}
-\end{split}\]</div>
-<p>Sehingga, baris 1 yang baru adalah:</p>
-<div class="math notranslate nohighlight">
-\[
-\left[\begin{array}{lll|lll}
-1 &amp; 0 &amp; 0 &amp; -\frac{36}{119} &amp; -\frac{19}{119} &amp; -\frac{10}{17}
-\end{array}\right]
-\]</div>
-<p>Langkah 2: Menghilangkan Elemen (2,3)
-Dari baris 2:</p>
-<div class="math notranslate nohighlight">
-\[
-R_2 \rightarrow R_2+\left(\frac{9}{7} \times R_3\right)
-\]</div>
-<p>Hitung setiap elemen baru pada baris 2:</p>
-<div class="math notranslate nohighlight">
-\[
-R_2=R_2+\frac{9}{7} R_3
-\]</div>
-<p>Untuk setiap elemen di baris 2:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation}
-\begin{array}{|l|l|l|}
-\hline \text { Elemen Lama } R_2 &amp; \frac{9}{7} \times R_3 &amp; \text { Hasil Baru } R_2 \\
-\hline(2,1): 0 &amp; 0 &amp; 0 \\
-\hline(2,2): 1 &amp; 0 &amp; 1 \\
-\hline(2,3):-\frac{9}{7} &amp; \frac{9}{7} \times 1=\frac{9}{7} &amp; -\frac{9}{7}+\frac{9}{7}=0 \\
-\hline(2,4): \frac{1}{7} &amp; \frac{9}{7} \times(-1)=-\frac{9}{7} &amp; \frac{1}{7}-\frac{9}{7}=-\frac{8}{7} \\
-\hline(2,5):-\frac{2}{7} &amp; \frac{9}{7} \times(-1)=-\frac{9}{7} &amp; -\frac{2}{7}-\frac{9}{7}=-\frac{11}{7} \\
-\hline(2,6): 0 &amp; \frac{9}{7} \times 1=\frac{9}{7} &amp; 0+\frac{9}{7}=\frac{9}{7} \\
-\hline
-\end{array}
-\end{equation}
-\end{split}\]</div>
-<p>Sehingga, baris 2 yang baru adalah:</p>
-<div class="math notranslate nohighlight">
-\[
-\left[\begin{array}{lll|lll}
-0 &amp; 1 &amp; 0 &amp; -\frac{8}{7} &amp; -\frac{11}{7} &amp; \frac{9}{7}
-\end{array}\right]
-\]</div>
-<p>Hasil Akhir Setelah Transformasi
-Setelah menghilangkan elemen <span class="math notranslate nohighlight">\((1,3)\)</span> dan <span class="math notranslate nohighlight">\((2,3)\)</span> , matriks menjadi:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; \left\lvert\,-\frac{36}{119}\right. &amp; -\frac{19}{119} &amp; -\frac{10}{17} \\
-0 &amp; 1 &amp; 0 &amp; -\frac{8}{7} &amp; -\frac{11}{7} &amp; \frac{9}{7} \\
-0 &amp; 0 &amp; 1 &amp; -1 &amp; -1 &amp; 1
+\left[\begin{array}{c}
+\left(\frac{8}{15} \times 2\right)+\left(-\frac{1}{5} \times 1\right)+\left(\frac{7}{20} \times 0\right) \\
+\left(-\frac{1}{5} \times 2\right)+\left(\frac{3}{5} \times 1\right)+\left(-\frac{7}{10} \times 0\right) \\
+\left(\frac{1}{15} \times 2\right)+\left(-\frac{2}{15} \times 1{ }^{\prime}+\left(\frac{7}{30} \times 0\right)\right.
+\end{array}\right]=\left[\begin{array}{l}
+1 \\
+0 \\
+0
 \end{array}\right]
 \end{split}\]</div>
 </section>
@@ -829,21 +690,15 @@ Setelah menghilangkan elemen <span class="math notranslate nohighlight">\((1,3)\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks-invers">Definisi Matriks Invers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-suatu-matriks-memiliki-invers">Syarat Suatu Matriks Memiliki Invers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-3-persamaan">MATRIK 3 PERSAMAAN</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-matriks-a">1. Diketahui Matriks <span class="math notranslate nohighlight">\({A}\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-elemen-1-1-menjadi-1">2. Membuat Elemen <span class="math notranslate nohighlight">\((1,1)\)</span> Menjadi 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghilangkan-elemen-kolom-1-di-baris-2-dan-3">3. Menghilangkan Elemen Kolom 1 di Baris 2 dan 3</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menjadikan-elemen-2-1-0">Langkah 1: Menjadikan Elemen (2,1) = 0</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menjadikan-elemen-3-1-0">Langkah 2: Menjadikan Elemen (3,1) = 0</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-matriks-setelah-eliminasi">Hasil matriks setelah eliminasi:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-elemen-2-2-menjadi-1">4. Membuat Elemen <span class="math notranslate nohighlight">\((2,2)\)</span> Menjadi 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghilangkan-elemen-kolom-2-di-baris-1-dan-3">5. Menghilangkan Elemen Kolom 2 di Baris 1 dan 3</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-baris-1-baru">Perhitungan Baris 1 Baru</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-baris-3-baru">Perhitungan Baris 3 Baru</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengubah-elemen-1-3-dan-2-3-menjadi-0">6. Mengubah Elemen (1,3) dan (2,3) menjadi 0</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-persamaan-3x3">Buat Persamaan 3x3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-bentuk-augmented-matrix-a-mid-i">Langkah 2: Bentuk Augmented Matrix   <span class="math notranslate nohighlight">\([A \mid I]\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-buat-elemen-1-1-menjadi-1">Langkah 3: Buat Elemen (1,1) Menjadi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-nol-kan-elemen-di-bawah-1-1">Langkah 4: Nol-kan Elemen di Bawah (1,1)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-buat-elemen-2-2-menjadi-1">Langkah 5: Buat Elemen <span class="math notranslate nohighlight">\((2,2)\)</span> Menjadi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-nol-kan-elemen-di-bawah-2-2">Langkah 6: Nol-kan Elemen di Bawah (2,2)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-7-buat-elemen-3-3-menjadi-1">Langkah 7: Buat Elemen (3,3) Menjadi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-8-nol-kan-elemen-di-atas-3-3">Langkah 8: Nol-kan Elemen di Atas (3,3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-9-hitung-a-1-times-b">Langkah 9: Hitung <span class="math notranslate nohighlight">\(A^{-1} \times B\)</span></a></li>
 </ul>
 </li>
 </ul>

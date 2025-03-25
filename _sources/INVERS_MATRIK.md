@@ -1,5 +1,5 @@
 ---
-title: INVERS_MATRIK
+title: INVERS MATRIK
 
 ---
 
@@ -42,370 +42,218 @@ Tidak semua matriks memiliki invers. Suatu matriks $A$ bisa memiliki invers $A^{
 Jika determinannya nol $(|A|=0)$, maka matriks disebut singular dan tidak memiliki invers.
 ## MATRIK 3 PERSAMAAN
 
+### Buat Persamaan 3x3    
+
 $$
 \left\{\begin{array}{l}
-2x+3 y- z=5 \\
-x-2y+4 z=-3 \\
-3 x+y+2z=7
+2 x-y+0 z=2 \\
+x+3 y-z=1 \\
+0 x+2 y+4 z=0
 \end{array}\right.
 $$
 
-### 1. Diketahui Matriks ${A}$
+Dari sistem ini, kita bisa tulis dalam bentuk matriks sebagai:
 
-Kita memiliki matriks $A$ : 
 
 $$
 A=\left[\begin{array}{ccc}
-2 & 3 & -1 \\
-1 & -2 & 4 \\
-3 & 1 & 2
+2 & -1 & 0 \\
+1 & 3 & -1 \\
+0 & 2 & 4
 \end{array}\right]
 $$
 
-Untuk mencari invers $\left(A^{-1}\right)$, kita buat matriks augmented dengan identitas: 
+
+dan
+
 
 $$
-[A \mid I]=\left[\begin{array}{cccccc}
-2 & 3 & -1 & \mid 1 & 0 & 0 \\
-1 & -2 & 4 & \mid 0 & 1 & 0 \\
-3 & 1 & 2 & \mid 0 & 0 & 1
+B=\left[\begin{array}{l}
+2 \\
+1 \\
+0
 \end{array}\right]
 $$
 
-Tujuan: Kita harus mengubah bagian kiri menjadi identitas $I$, dan bagian kanan akan menjadi invers $A^{-1}$.
 
-### 2. Membuat Elemen $(1,1)$ Menjadi 1
+Kita ingin mencari invers $A^{-1}$ dan menunjukkan bahwa:
 
-Saat ini, elemen pertama $(1,1)$ adalah 2, jadi kita bagi seluruh baris 1 dengan 2:
+
+$$
+A^{-1} \times B=\left[\begin{array}{l}
+1 \\
+0 \\
+0
+\end{array}\right]
+$$
+
+
+Sehingga solusinya adalah 
+
+$x=1, y=0, z=0$.
+
+### Langkah 2: Bentuk Augmented Matrix   $[A \mid I]$
+Kita gabungkan $A$ dengan matriks identitas $I$ : 
+
+
+$$
+[A \mid I]=\left[\begin{array}{ccc|ccc}
+2 & -1 & 0 & \mid 1 & 0 & 0 \\
+1 & 3 & -1 & \mid 0 & 1 & 0 \\
+0 & 2 & 4 & 0 & 0 & 1
+\end{array}\right]
+$$
+
+
+### Langkah 3: Buat Elemen (1,1) Menjadi 1
+Saat ini, elemen pertama (1,1) adalah 2. Kita ubah menjadi 1 dengan membagi baris pertama dengan 2:
+
 
 $$
 \begin{gathered}
-R_1 \rightarrow \frac{1}{2} R_1 \\
+R_1 \leftarrow \frac{1}{2} R_1 \\
 {\left[\begin{array}{ccc|ccc}
-1 & \frac{3}{2} & -\frac{1}{2} & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
-1 & -2 & 4 & 0 & 1 & 0 \\
-3 & 1 & 2 & 0 & 0 & 1
+1 & -\frac{1}{2} & 0 & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
+1 & 3 & -1 & 0 & 1 & 0 \\
+0 & 2 & 4 & 0 & 0 & 1
 \end{array}\right]}
 \end{gathered}
 $$
 
-### 3. Menghilangkan Elemen Kolom 1 di Baris 2 dan 3
+### Langkah 4: Nol-kan Elemen di Bawah (1,1)
+Kita nol-kan elemen $(2,1)$ menggunakan operasi baris:
 
-Kita buat elemen $(2,1)$ dan $(3,1)$ menjadi 0.
-
-- Baris $2 \rightarrow R_2=R_2-R_1$
-- Baris $3 \rightarrow R_3=R_3-3 R_1$
-
-
-#### Langkah 1: Menjadikan Elemen (2,1) = 0
-Elemen ( 2,1 ) saat ini adalah 1.
-Untuk mengubahnya menjadi 0, kita lakukan operasi baris:
 
 $$
-R_2=R_2-R_1
+\begin{gathered}
+R_2 \leftarrow R_2-R_1 \\
+{\left[\begin{array}{cccccc}
+1 & -\frac{1}{2} & 0 & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
+0 & \frac{7}{2} & -1 & -\frac{1}{2} & 1 & 0 \\
+0 & 2 & 4 & \mid 0 & 0 & 1
+\end{array}\right]}
+\end{gathered}
 $$
 
-Perhitungan Baris 2 Baru ( $\mathbf{R}_{\mathbf{2}}$ )
-Setiap elemen baris 2 dikurangi baris 1.
+### Langkah 5: Buat Elemen $(2,2)$ Menjadi 1
+Saat ini, elemen $(2,2)$ adalah $\frac{7}{2}$. Kita ubah menjadi 1 dengan membagi baris kedua dengan $\frac{7}{2}$ : 
+
 
 $$
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } & R_2 \text { Lama } & R_1 & R_2-R_1 \text { (Baris 2 Baru) } \\
-\hline(2,1) & 1 & 1 & 1-1=0 \\
-\hline(2,2) & -2 & \frac{3}{2} & -2-\frac{3}{2}=-\frac{4}{2}-\frac{3}{2}=-\frac{7}{2} \\
-\hline(2,3) & 4 & -\frac{1}{2} & 4-\left(-\frac{1}{2}\right)=4+\frac{1}{2}=\frac{8}{2}+\frac{1}{2}=\frac{9}{2} \\
-\hline(2,4) & 0 & \frac{1}{2} & 0-\frac{1}{2}=-\frac{1}{2} \\
-\hline(2,5) & 1 & 0 & 1-0=1 \\
-\hline(2,6) & 0 & 0 & 0-0=0 \\
-\hline
-\end{array}
-\end{equation}
+\begin{gathered}
+R_2 \leftarrow \frac{2}{7} R_2 \\
+{\left[\begin{array}{cccccc}
+1 & -\frac{1}{2} & 0 & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
+0 & 1 & -\frac{2}{7} & \left\lvert\,-\frac{1}{7}\right. & \frac{2}{7} & 0 \\
+0 & 2 & 4 & \mid 0 & 0 & 1
+\end{array}\right]}
+\end{gathered}
 $$
 
-Hasil baris 2 baru:
-$$
-\left(0,-\frac{7}{2}, \frac{9}{2}, \left\lvert\,-\frac{1}{2}\right., 1,0\right)
-$$
+### Langkah 6: Nol-kan Elemen di Bawah (2,2)
 
-#### Langkah 2: Menjadikan Elemen (3,1) = 0
-Elemen ( 3,1 ) saat ini adalah 3.
-Untuk mengubahnya menjadi 0, kita lakukan operasi baris:
+Kita nol-kan elemen (3,2):
+
 
 $$
-R_3=R_3-3 R_1
+\begin{gathered}
+R_3 \leftarrow R_3-2 R_2 \\
+{\left[\begin{array}{cccccc}
+1 & -\frac{1}{2} & 0 & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
+0 & 1 & -\frac{2}{7} & \left\lvert\,-\frac{1}{7}\right. & \frac{2}{7} & 0 \\
+0 & 0 & \frac{30}{7} & \left\lvert\, \frac{2}{7}\right. & -\frac{4}{7} & 1
+\end{array}\right]}
+\end{gathered}
 $$
 
-Perhitungan Baris 3 Baru ( $\mathbf{R}_3$ )
-Setiap elemen baris $\mathbf{3}$ dikurangi $\mathbf{3 \times}$ baris 1 .
+### Langkah 7: Buat Elemen (3,3) Menjadi 1
+Saat ini, elemen $(3,3)$ adalah $\frac{30}{7}$. Kita ubah menjadi 1 dengan membagi baris ketiga dengan $\frac{30}{7}$ : 
+
 
 $$
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } & R_3 \text { Lama } & 3 \times R_1 & R_3-3 R_1 \text { (Baris 3 Baru) } \\
-\hline(3,1) & 3 & 3 \times 1=3 & 3-3=0 \\
-\hline(3,2) & 1 & 3 \times \frac{3}{2}=\frac{9}{2} & 1-\frac{9}{2}=\frac{2}{2}-\frac{9}{2}=-\frac{7}{2} \\
-\hline(3,3) & 2 & 3 \times\left(-\frac{1}{2}\right)=-\frac{3}{2} & 2-\left(-\frac{3}{2}\right)=2+\frac{3}{2}=\frac{4}{2}+\frac{3}{2}=\frac{11}{2} \\
-\hline(3,4) & 0 & 3 \times \frac{1}{2}=\frac{3}{2} & 0-\frac{3}{2}=-\frac{3}{2} \\
-\hline(3,5) & 0 & 3 \times 0=0 & 0-0=0 \\
-\hline(3,6) & 1 & 3 \times 0=0 & 1-0=1 \\
-\hline
-\end{array}
-\end{equation}
+\begin{gathered}
+R_3 \leftarrow \frac{7}{30} R_3 \\
+{\left[\begin{array}{cccccc}
+1 & -\frac{1}{2} & 0 & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
+0 & 1 & -\frac{2}{7} & -\frac{1}{7} & \frac{2}{7} & 0 \\
+0 & 0 & 1 & \left\lvert\, \frac{1}{15}\right. & -\frac{2}{15} & \frac{7}{30}
+\end{array}\right]}
+\end{gathered}
 $$
 
-Hasil baris 3 baru:
+### Langkah 8: Nol-kan Elemen di Atas (3,3)
+Kita nol-kan elemen $(1,2)$ dan $(2,3)$.
+- Untuk baris (1,2):
+
+
 $$
-\left(0,-\frac{7}{2}, \frac{11}{2}, \left\lvert\,-\frac{3}{2}\right., 0,1\right)
+R_1 \leftarrow R_1+\frac{1}{2} R_2
 $$
 
-#### Hasil matriks setelah eliminasi:
+
+- Untuk baris (2,3):
+
+
+$$
+R_2 \leftarrow R_2+\frac{2}{7} R_3
+$$
+
+- Untuk baris (1,3)
+
+$$
+R_1 \leftarrow R_1 + \frac{1}{7} R_3
+$$
+
+Hasil akhirnya: 
+
 
 $$
 \left[\begin{array}{cccccc}
-1 & \frac{3}{2} & -\frac{1}{2} & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
-0 & -\frac{7}{2} & \frac{9}{2} & \left\lvert\,-\frac{1}{2}\right. & 1 & 0 \\
-0 & -\frac{7}{2} & \frac{11}{2} & -\frac{3}{2} & 0 & 1
+1 & 0 & 0 & \left\lvert\, \frac{8}{15}\right. & -\frac{1}{5} & \frac{7}{20} \\
+0 & 1 & 0 & \left\lvert\,-\frac{1}{5}\right. & \frac{3}{5} & -\frac{7}{10} \\
+0 & 0 & 1 & \left\lvert\, \frac{1}{15}\right. & -\frac{2}{15} & \frac{7}{30}
 \end{array}\right]
 $$
 
-### 4. Membuat Elemen $(2,2)$ Menjadi 1
 
-Saat ini, elemen $(2,2)$ adalah $-\frac{7}{2}$. Untuk menjadikannya 1 , kita bagi baris 2 dengan $-\frac{7}{2}$ : 
+Maka inversnya adalah: 
 
-$$
-R_2 \rightarrow \frac{2}{-7} R_2
-$$
-
-Perhitungan Baris 2 Baru
-
-Kita lakukan pembagian untuk setiap elemen di baris 2:
 
 $$
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } & \text { Nilai Lama } R_2 & \text { Dibagi }-\frac{7}{2} & \text { Hasil Baru } R_2 \\
-\hline(2,1) & 0 & 0 \div\left(-\frac{7}{2}\right) & 0 \\
-\hline(2,2) & -\frac{7}{2} & \left(-\frac{7}{2}\right) \div\left(-\frac{7}{2}\right) & 1 \\
-\hline(2,3) & \frac{9}{2} & \left(\frac{9}{2}\right) \div\left(-\frac{7}{2}\right) & -\frac{9}{7} \\
-\hline(2,4) & -\frac{1}{2} & \left(-\frac{1}{2}\right) \div\left(-\frac{7}{2}\right) & \frac{1}{7} \\
-\hline(2,5) & 1 & 1 \div\left(-\frac{7}{2}\right) & -\frac{2}{7} \\
-\hline(2,6) & 0 & 0 \div\left(-\frac{7}{2}\right) & 0 \\
-\hline
-\end{array}
-\end{equation}
+A^{-1}=\left[\begin{array}{ccc}
+\frac{8}{15} & -\frac{1}{5} & \frac{7}{20} \\
+-\frac{1}{5} & \frac{3}{5} & -\frac{7}{10} \\
+\frac{1}{15} & -\frac{2}{15} & \frac{7}{30}
+\end{array}\right]
 $$
 
-Hasil baris 2 setelah pembagian:
+### Langkah 9: Hitung $A^{-1} \times B$
+Dengan $B=\left[\begin{array}{l}2 \\ 1 \\ 0\end{array}\right]$  , kita hitung: 
+
 
 $$
-\left(0,1,-\frac{9}{7}, \left\lvert\, \frac{1}{7}\right.,-\frac{2}{7}, 0\right)
+A^{-1} \times B=\left[\begin{array}{ccc}
+\frac{8}{15} & -\frac{1}{5} & \frac{7}{20} \\
+-\frac{1}{5} & \frac{3}{5} & -\frac{7}{10} \\
+\frac{1}{15} & -\frac{2}{15} & \frac{7}{30}
+\end{array}\right] \times\left[\begin{array}{l}
+2 \\
+1 \\
+0
+\end{array}\right]
 $$
+
 Hasilnya:
 
-$$
-\left[\begin{array}{cccccc}
-1 & \frac{3}{2} & -\frac{1}{2} & \left\lvert\, \frac{1}{2}\right. & 0 & 0 \\
-0 & 1 & -\frac{9}{7} & \left\lvert\, \frac{1}{7}\right. & -\frac{2}{7} & 0 \\
-0 & -\frac{7}{2} & \frac{11}{2} & \left\lvert\,-\frac{3}{2}\right. & 0 & 1
-\end{array}\right]
-$$
-
-### 5. Menghilangkan Elemen Kolom 2 di Baris 1 dan 3
-- Baris $1 \rightarrow R_1=R_1-\frac{3}{2} R_2$
-- Baris $3 \rightarrow R_3=R_3+\frac{7}{2} R_2$
-
-
-
-#### Perhitungan Baris 1 Baru
-
-Setiap elemen di baris 1 dikurangi $\frac{3}{2} \times$ baris 2 .
 
 $$
-\begin{equation}
-\begin{array}{|c|c|c|c|}
-\hline \text { Elemen } & \text { Nilai Lama } R_1 & \frac{3}{2} \times R_2 & R_1-\frac{3}{2} R_2 \text { (Baris 1 Baru) } \\
-\hline(1,1) & 1 & \frac{3}{2} \times 0=0 & 1-0=1 \\
-\hline(1,2) & \frac{3}{2} & \frac{3}{2} \times 1=\frac{3}{2} & \frac{3}{2}-\frac{3}{2}=0 \\
-\hline(1,3) & -\frac{1}{2} & \frac{3}{2} \times\left(-\frac{9}{7}\right)=-\frac{27}{14} & -\frac{1}{2}-\left(-\frac{27}{14}\right)=-\frac{7}{14}+\frac{27}{14}=\frac{20}{14}=\frac{10}{7} \\
-\hline(1,4) & \frac{1}{2} & \frac{3}{2} \times \frac{1}{7}=\frac{3}{14} & \frac{1}{2}-\frac{3}{14}=\frac{7}{14}-\frac{3}{14}=\frac{4}{14}=\frac{2}{7} \\
-\hline(1,5) & 0 & \frac{3}{2} \times\left(-\frac{2}{7}\right)=-\frac{6}{14} & 0-\left(-\frac{6}{14}\right)=\frac{6}{14}=\frac{3}{7} \\
-\hline(1,6) & 0 & \frac{3}{2} \times 0=0 & 0-0=0 \\
-\hline
-\end{array}
-\end{equation}
-$$
-
-Hasil baris 1 baru:
-
-$$
-\left(1,0, \frac{10}{7}, \left\lvert\, \frac{2}{7}\right., \frac{3}{7}, 0\right)
-$$
-
-#### Perhitungan Baris 3 Baru
-
-Setiap elemen di baris 3 ditambah $\frac{7}{2} \times$ baris 2 .
-
-$$
-\begin{array}{|c|c|c|c|}
-\hline
-\text{Elemen} & \text{Nilai Lama } R_3 & \frac{7}{2} \times R_2 & R_3 + \frac{7}{2} R_2 \text{ (Baris 3 Baru)} \\
-\hline
-(3,1) & 0 & \frac{7}{2} \times 0 = 0 & 0 + 0 = 0 \\
-\hline
-(3,2) & -\frac{7}{2} & \frac{7}{2} \times 1 = \frac{7}{2} & -\frac{7}{2} + \frac{7}{2} = 0 \\
-\hline
-(3,3) & \frac{11}{2} & \frac{7}{2} \times \left(-\frac{9}{7}\right) = -\frac{63}{14} = -\frac{9}{2} & \frac{11}{2} - \frac{9}{2} = \frac{2}{2} = 1 \\
-\hline
-(3,4) & -\frac{3}{2} & \frac{7}{2} \times \frac{1}{7} = \frac{1}{2} & -\frac{3}{2} + \frac{1}{2} = -\frac{2}{2} = -1 \\
-\hline
-(3,5) & 0 & \frac{7}{2} \times \left(-\frac{2}{7}\right) = -\frac{14}{14} = -1 & 0 - 1 = -1 \\
-\hline
-(3,6) & 1 & \frac{7}{2} \times 0 = 0 & 1 + 0 = 1 \\
-\hline
-\end{array}
-$$
-
-Hasil baris 3 baru:
-$$
-(0,0,1, \mid-1,-1,1)
-$$
-
-Hasil matriks:
-
-$$
-\left[\begin{array}{cccccc}
-1 & 0 & \frac{10}{17} & \left\lvert\, \frac{2}{7}\right. & \frac{3}{7} & 0 \\
-0 & 1 & -\frac{9}{7} & \left\lvert\, \frac{1}{7}\right. & -\frac{2}{7} & 0 \\
-0 & 0 & 1 & \left\lvert\,-1\right. & -1 & 1
-\end{array}\right]
-$$
-
-### 6. Mengubah Elemen (1,3) dan (2,3) menjadi 0
-
-$$
-\left[\begin{array}{cccccc}
-1 & 0 & \frac{10}{17} & \left\lvert\, \frac{2}{7}\right. & \frac{3}{7} & 0 \\
-0 & 1 & -\frac{9}{7} & \left\lvert\, \frac{1}{7}\right. & -\frac{2}{7} & 0 \\
-0 & 0 & 1 & \left\lvert\,-1\right. & -1 & 1
-\end{array}\right]
-$$
-
-
-Langkah 1: Menghilangkan Elemen (1,3)
-Dari baris 1:
-
-
-$$
-R_1 \rightarrow R_1-\left(\frac{10}{17} \times R_3\right)
-$$
-
-
-Hitung setiap elemen baru pada baris 1:
-$$
-R_1=R_1-\frac{10}{17} R_3
-$$
-
-
-Untuk setiap elemen di baris 1:
-
-
-$$
-\begin{array}{|c|c|c|}
-\hline 
-\textbf{Elemen Lama } R_1 & \frac{10}{17} \times R_3 & \textbf{Hasil Baru } R_1 \\
-\hline
-(\mathbf{1 , 1 )}: 1 & 0 & 1 \\
-\hline
-(\mathbf{1}, \mathbf{2}): 0 & 0 & 0 \\
-\hline
-(\mathbf{1}, \mathbf{3}): \frac{10}{17} & \frac{10}{17} \times 1=\frac{10}{17} & \frac{10}{17}-\frac{10}{17}=0 \\
-\hline
-(\mathbf{1 , 4 )}: \frac{2}{7} & \frac{10}{17} \times(-1)=-\frac{10}{17} & \frac{2}{7}-\frac{10}{17} \\
-\hline
-(\mathbf{1}, \mathbf{5}): \frac{3}{7} & \frac{10}{17} \times(-1)=-\frac{10}{17} & \frac{3}{7}-\frac{10}{17} \\
-\hline
-(\mathbf{1}, \mathbf{6}): 0 & \frac{10}{17} \times 1=\frac{10}{17} & 0-\frac{10}{17}=-\frac{10}{17} \\
-\hline
-\end{array}
-$$
-
-
-Menyederhanakan elemen $(1,4)$ dan $(1,5):$
-
-
-$$
-\begin{aligned}
-& \frac{2}{7}-\frac{10}{17}=\frac{34}{119}-\frac{70}{119}=-\frac{36}{119} \\
-& \frac{3}{7}-\frac{10}{17}=\frac{51}{119}-\frac{70}{119}=-\frac{19}{119}
-\end{aligned}
-$$
-
-
-Sehingga, baris 1 yang baru adalah:
-
-
-$$
-\left[\begin{array}{lll|lll}
-1 & 0 & 0 & -\frac{36}{119} & -\frac{19}{119} & -\frac{10}{17}
-\end{array}\right]
-$$
-
-
-Langkah 2: Menghilangkan Elemen (2,3)
-Dari baris 2:
-
-
-$$
-R_2 \rightarrow R_2+\left(\frac{9}{7} \times R_3\right)
-$$
-
-
-Hitung setiap elemen baru pada baris 2: 
-
-
-$$
-R_2=R_2+\frac{9}{7} R_3
-$$
-
-
-Untuk setiap elemen di baris 2:
-
-
-$$
-\begin{equation}
-\begin{array}{|l|l|l|}
-\hline \text { Elemen Lama } R_2 & \frac{9}{7} \times R_3 & \text { Hasil Baru } R_2 \\
-\hline(2,1): 0 & 0 & 0 \\
-\hline(2,2): 1 & 0 & 1 \\
-\hline(2,3):-\frac{9}{7} & \frac{9}{7} \times 1=\frac{9}{7} & -\frac{9}{7}+\frac{9}{7}=0 \\
-\hline(2,4): \frac{1}{7} & \frac{9}{7} \times(-1)=-\frac{9}{7} & \frac{1}{7}-\frac{9}{7}=-\frac{8}{7} \\
-\hline(2,5):-\frac{2}{7} & \frac{9}{7} \times(-1)=-\frac{9}{7} & -\frac{2}{7}-\frac{9}{7}=-\frac{11}{7} \\
-\hline(2,6): 0 & \frac{9}{7} \times 1=\frac{9}{7} & 0+\frac{9}{7}=\frac{9}{7} \\
-\hline
-\end{array}
-\end{equation}
-$$
-
-
-Sehingga, baris 2 yang baru adalah:
-
-
-$$
-\left[\begin{array}{lll|lll}
-0 & 1 & 0 & -\frac{8}{7} & -\frac{11}{7} & \frac{9}{7}
-\end{array}\right]
-$$
-
-
-Hasil Akhir Setelah Transformasi
-Setelah menghilangkan elemen $(1,3)$ dan $(2,3)$ , matriks menjadi:
-
-
-$$
-\left[\begin{array}{cccccc}
-1 & 0 & 0 & \left\lvert\,-\frac{36}{119}\right. & -\frac{19}{119} & -\frac{10}{17} \\
-0 & 1 & 0 & -\frac{8}{7} & -\frac{11}{7} & \frac{9}{7} \\
-0 & 0 & 1 & -1 & -1 & 1
+\left[\begin{array}{c}
+\left(\frac{8}{15} \times 2\right)+\left(-\frac{1}{5} \times 1\right)+\left(\frac{7}{20} \times 0\right) \\
+\left(-\frac{1}{5} \times 2\right)+\left(\frac{3}{5} \times 1\right)+\left(-\frac{7}{10} \times 0\right) \\
+\left(\frac{1}{15} \times 2\right)+\left(-\frac{2}{15} \times 1{ }^{\prime}+\left(\frac{7}{30} \times 0\right)\right.
+\end{array}\right]=\left[\begin{array}{l}
+1 \\
+0 \\
+0
 \end{array}\right]
 $$
