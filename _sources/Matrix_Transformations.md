@@ -161,7 +161,7 @@ Pada paket aplikasi grafika yang hanya mampu memutar objek menurut koordinat asa
 2. Putar objek pada titik pusat.
 3. Pindahkan objek dari titik pusat ke posisi semula.
 
-![image](https://hackmd.io/_uploads/r1m6fUSCyg.png)
+<img alt="image" src="_images/2.png" />
 
 
 ### B5. Scaling Terhadap Fixed Point
