@@ -197,7 +197,7 @@ $$
 T\left(X_f, y_f\right) \cdot S\left(S_x, S_y\right) \cdot T\left(-x_f,-y_f\right)=S\left(x_f, y_f, S_x, S_y\right)
 $$
 
-![image](https://hackmd.io/_uploads/rJ7vzLSAJe.png)
+<img alt="image" src="_images/3.png" />
 
 ## Transformasi Lain
 Transformasi dasar seperti translasi, penskalaan dan rotasi merupakan
@@ -222,7 +222,7 @@ $$
 \end{array}\right]
 $$
 
-![image](https://hackmd.io/_uploads/rkI4fLSCyl.png)
+<img alt="image" src="_images/4.png" />
 
 llustrasi refleksi terhadap sumbu x
 
@@ -237,7 +237,7 @@ $$
 \end{array}\right]
 $$
 
-![image](https://hackmd.io/_uploads/SJw4Q8HRkx.png)
+<img alt="image" src="_images/5.png" />
 
 ## A3. Refleksi Terhadap Sumbu Tegak Lurus Bidang XY
 Refleksi terhadap sumbu yang tegak lurus bidang xy dan melalui titik pusat dinyatakan dengan matriks:
@@ -250,7 +250,7 @@ $$
 \end{array}\right]
 $$
 
-![image](https://hackmd.io/_uploads/HJ75QUSRkl.png)
+<img alt="image" src="_images/6.png" />
 
 ## A4. Refleksi Terhadap Garis Diagonal Y = X
 Refleksi terhadap garis diagonal, y = x dinyatakan dengan matriks:
@@ -263,7 +263,7 @@ $$
 \end{array}\right]
 $$
 
-![image](https://hackmd.io/_uploads/H13-VIBAyg.png)
+<img alt="image" src="_images/7.png" />
 
 Terhadap sumbu x
 
