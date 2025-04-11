@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to materi Komputasi aljabar linier &#8212; My KAL book</title>
+    <title>Exercise Matrik Transformation &#8212; My KAL book</title>
   
   
   
@@ -62,10 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Exercise';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="SISTEM PERSAMAAN LINIER" href="sistem_persamaan_3variabel.html" />
+    <link rel="prev" title="Matrix Transformations" href="Matrix_Transformations.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +117,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +136,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,17 +163,17 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to materi Komputasi aljabar linier
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sistem_persamaan_3variabel.html">SISTEM PERSAMAAN LINIER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="INVERS_MATRIK.html">INVERS MATRIK</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Matrix_Transformations.html">Matrix Transformations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="Exercise.html">Exercise Matrik Transformation</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Matrix_Transformations.html">Matrix Transformations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Exercise Matrik Transformation</a></li>
 </ul>
 </details></li>
 </ul>
@@ -254,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FExercise.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +282,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Exercise.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -360,7 +358,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to materi Komputasi aljabar linier</h1>
+    <h1>Exercise Matrik Transformation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -370,7 +368,16 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identitas">IDENTITAS:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-kelompok-diberikan-matriks-a-gambarlah-yx-yy-ayx-dan-ayy-pada-sumbu-cartesian-yang-sama-di-mana">Latihan Kelompok. Diberikan matriks A. Gambarlah ÿx, ÿy, Aÿx, dan Ay̆y pada sumbu Cartesian yang sama, di mana</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a1">1. Matriks A1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a2">2. Matriks A2:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kelompok-latihan-sketsa-persegi-satuan-yang-telah-ditransformasikan-diberikan-temukan-matriks-a-yang-melakukan-transformasi-ini">Kelompok Latihan. Sketsa persegi satuan yang telah ditransformasikan diberikan. Temukan matriks A yang melakukan transformasi ini.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-5">Soal 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-6">Soal 6</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -382,20 +389,201 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-materi-komputasi-aljabar-linier">
-<h1>Welcome to materi Komputasi aljabar linier<a class="headerlink" href="#welcome-to-materi-komputasi-aljabar-linier" title="Link to this heading">#</a></h1>
-<p>Repository ini Menampung tugas dan materi dari Komputasi aljabar linier</p>
-<section id="identitas">
-<h2>IDENTITAS:<a class="headerlink" href="#identitas" title="Link to this heading">#</a></h2>
-<p>NAMA : FAHRIZAL UMAM</p>
-<p>NIM : 230411100056</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="sistem_persamaan_3variabel.html">SISTEM PERSAMAAN LINIER</a></li>
-<li class="toctree-l1"><a class="reference internal" href="INVERS_MATRIK.html">INVERS MATRIK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Matrix_Transformations.html">Matrix Transformations</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-matrik-transformation">
+<h1>Exercise Matrik Transformation<a class="headerlink" href="#exercise-matrik-transformation" title="Link to this heading">#</a></h1>
+<section id="latihan-kelompok-diberikan-matriks-a-gambarlah-yx-yy-ayx-dan-ayy-pada-sumbu-cartesian-yang-sama-di-mana">
+<h2>Latihan Kelompok. Diberikan matriks A. Gambarlah ÿx, ÿy, Aÿx, dan Ay̆y pada sumbu Cartesian yang sama, di mana<a class="headerlink" href="#latihan-kelompok-diberikan-matriks-a-gambarlah-yx-yy-ayx-dan-ayy-pada-sumbu-cartesian-yang-sama-di-mana" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+y \mathrm{y}=\begin{aligned}
+&amp; 1 \\
+&amp; 1
+\end{aligned} \quad \text { dan } y \mathrm{y}=\quad \begin{array}{r}
+-1 \\
+2
+\end{array}
+\end{split}\]</div>
+<ol class="arabic simple">
+<li><p>Sebuah <span class="math notranslate nohighlight">\(=\begin{aligned} &amp; 1 \overline{\mathrm{y} 1} \\ &amp; 2 3\end{aligned}\)</span></p></li>
+<li><p>Sebuah <span class="math notranslate nohighlight">\(=\begin{array}{r}20 \\ -13\end{array}\)</span></p></li>
+</ol>
+<section id="matriks-a1">
+<h3>1. Matriks A1:<a class="headerlink" href="#matriks-a1" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=\left[\begin{array}{ll}
+1 &amp; 1 \\
+2 &amp; 3
+\end{array}\right]
+\end{split}\]</div>
+<p>a. <span class="math notranslate nohighlight">\(A \hat{x}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+A \hat{x}=\left[\begin{array}{ll}
+1 &amp; 1 \\
+2 &amp; 3
+\end{array}\right]\left[\begin{array}{l}
+1 \\
+1
+\end{array}\right]=\left[\begin{array}{l}
+1(1)+1(1) \\
+2(1)+3(1)
+\end{array}\right]=\left[\begin{array}{l}
+2 \\
+5
+\end{array}\right]
+\end{split}\]</div>
+<p>b. <span class="math notranslate nohighlight">\(A \hat{y}\)</span>
+$<span class="math notranslate nohighlight">\(
+A \hat{y}=\left[\begin{array}{ll}
+1 &amp; 1 \\
+2 &amp; 3
+\end{array}\right]\left[\begin{array}{c}
+-1 \\
+2
+\end{array}\right]=\left[\begin{array}{l}
+1(-1)+1(2) \\
+2(-1)+3(2)
+\end{array}\right]=\left[\begin{array}{l}
+1 \\
+4
+\end{array}\right]
+\)</span>$</p>
+</section>
+<section id="matriks-a2">
+<h3>2. Matriks A2:<a class="headerlink" href="#matriks-a2" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=\left[\begin{array}{cc}
+2 &amp; 0 \\
+-1 &amp; 3
+\end{array}\right]
+\end{split}\]</div>
+<p>a. <span class="math notranslate nohighlight">\(A \hat{x}\)</span>
+$<span class="math notranslate nohighlight">\(
+A \hat{x}=\left[\begin{array}{cc}
+2 &amp; 0 \\
+-1 &amp; 3
+\end{array}\right]\left[\begin{array}{l}
+1 \\
+1
+\end{array}\right]=\left[\begin{array}{c}
+2(1)+0(1) \\
+-1(1)+3(1)
+\end{array}\right]=\left[\begin{array}{l}
+2 \\
+2
+\end{array}\right]
+\)</span><span class="math notranslate nohighlight">\(
+b. \)</span>A \hat{y}<span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+A \hat{y}=\left[\begin{array}{cc}
+2 &amp; 0 \\
+-1 &amp; 3
+\end{array}\right]\left[\begin{array}{c}
+-1 \\
+2
+\end{array}\right]=\left[\begin{array}{c}
+2(-1)+0(2) \\
+-1(-1)+3(2)
+\end{array}\right]=\left[\begin{array}{c}
+-2 \\
+7
+\end{array}\right]
+\)</span>$</p>
+<p>Prinsip Dasar Transformasi Matriks</p>
+<ol class="arabic simple">
+<li><p>Matriks transformasi <span class="math notranslate nohighlight">\(2 \times 2, A\)</span>, akan mengubah vektor-vektor standar.
+$<span class="math notranslate nohighlight">\(
+\hat{x}=\left[\begin{array}{l}
+1 \\
+0
+\end{array}\right], \quad \hat{y}=\left[\begin{array}{l}
+0 \\
+1
+\end{array}\right]
+\)</span>$</p></li>
+<li><p>Hasil transformasi masing-masing vektor akan menjadi kolom-kolom dari matriks <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> :
+$<span class="math notranslate nohighlight">\(
+A=\left[\begin{array}{ll}
+A \hat{x} &amp; A \hat{y}
+\end{array}\right]
+\)</span>$</p></li>
+</ol>
+</section>
+</section>
+<section id="kelompok-latihan-sketsa-persegi-satuan-yang-telah-ditransformasikan-diberikan-temukan-matriks-a-yang-melakukan-transformasi-ini">
+<h2>Kelompok Latihan. Sketsa persegi satuan yang telah ditransformasikan diberikan. Temukan matriks A yang melakukan transformasi ini.<a class="headerlink" href="#kelompok-latihan-sketsa-persegi-satuan-yang-telah-ditransformasikan-diberikan-temukan-matriks-a-yang-melakukan-transformasi-ini" title="Link to this heading">#</a></h2>
+<p><img alt="image" src="https://hackmd.io/_uploads/H1lyiLB0ye.png" /></p>
+<section id="soal-5">
+<h3>Soal 5<a class="headerlink" href="#soal-5" title="Link to this heading">#</a></h3>
+<p>Langkah 1: Identifikasi transformasi dari gambar</p>
+<ul class="simple">
+<li><p>Vektor <span class="math notranslate nohighlight">\(\hat{\boldsymbol{x}}\)</span> (ke arah kanan 1 satuan) ditransformasikan menjadi:</p></li>
 </ul>
-</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \hat{x}=\left[\begin{array}{l}
+1 \\
+2
+\end{array}\right]
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Vektor <span class="math notranslate nohighlight">\(\hat{y}\)</span> (ke atas 1 satuan) ditransformasikan menjadi:
+$<span class="math notranslate nohighlight">\(
+A \hat{y}=\left[\begin{array}{l}
+2 \\
+3
+\end{array}\right]
+\)</span>$</p></li>
+</ul>
+<p>Langkah 2: Susun Matriks Transformasi</p>
+<ul class="simple">
+<li><p>Masukkan hasil transformasi sebagai kolom-kolom matriks:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=\left[\begin{array}{ll}
+1 &amp; 2 \\
+2 &amp; 3
+\end{array}\right]
+\end{split}\]</div>
+</section>
+<section id="soal-6">
+<h3>Soal 6<a class="headerlink" href="#soal-6" title="Link to this heading">#</a></h3>
+<p>Langkah 1: Identifikasi transformasi dari gambar</p>
+<ul class="simple">
+<li><p>Vektor <span class="math notranslate nohighlight">\(\hat{x}\)</span> ditransformasikan menjadi:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \hat{x}=\left[\begin{array}{l}
+1 \\
+1
+\end{array}\right]
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Vektor <span class="math notranslate nohighlight">\(\hat{y}\)</span> ditransformasikan menjadi:
+$<span class="math notranslate nohighlight">\(
+A \hat{y}=\left[\begin{array}{c}
+-1 \\
+1
+\end{array}\right]
+\)</span>$</p></li>
+</ul>
+<p>Langkah 2: Susun Matriks Transformasi</p>
+<ul class="simple">
+<li><p>Masukkan hasil transformasi sebagai kolom-kolom:</p></li>
+<li></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A=\left[\begin{array}{cc}
+1 &amp; -1 \\
+1 &amp; 1
+\end{array}\right]
+\end{split}\]</div>
+</section>
 </section>
 </section>
 
@@ -429,14 +617,14 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="sistem_persamaan_3variabel.html"
-       title="next page">
+    <a class="left-prev"
+       href="Matrix_Transformations.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SISTEM PERSAMAAN LINIER</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Matrix Transformations</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -455,7 +643,16 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identitas">IDENTITAS:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan-kelompok-diberikan-matriks-a-gambarlah-yx-yy-ayx-dan-ayy-pada-sumbu-cartesian-yang-sama-di-mana">Latihan Kelompok. Diberikan matriks A. Gambarlah ÿx, ÿy, Aÿx, dan Ay̆y pada sumbu Cartesian yang sama, di mana</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a1">1. Matriks A1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-a2">2. Matriks A2:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kelompok-latihan-sketsa-persegi-satuan-yang-telah-ditransformasikan-diberikan-temukan-matriks-a-yang-melakukan-transformasi-ini">Kelompok Latihan. Sketsa persegi satuan yang telah ditransformasikan diberikan. Temukan matriks A yang melakukan transformasi ini.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-5">Soal 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-6">Soal 6</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
