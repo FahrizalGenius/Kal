@@ -87,6 +87,7 @@ P^{\prime}= & T\left(t_x 2, t_y 2\right) \cdot\left\{T\left(t_x 1, t_y 1\right) 
 $$
 
 Dimana:
+
 P dan P' : Vektor kolom koordinat homogen
 
 Dalam bentuk matriks:
@@ -160,7 +161,7 @@ Pada paket aplikasi grafika yang hanya mampu memutar objek menurut koordinat asa
 2. Putar objek pada titik pusat.
 3. Pindahkan objek dari titik pusat ke posisi semula.
 
-$![image](https://hackmd.io/_uploads/r1m6fUSCyg.png)$
+![image](https://hackmd.io/_uploads/r1m6fUSCyg.png)
 
 
 ### B5. Scaling Terhadap Fixed Point
@@ -196,7 +197,7 @@ $$
 T\left(X_f, y_f\right) \cdot S\left(S_x, S_y\right) \cdot T\left(-x_f,-y_f\right)=S\left(x_f, y_f, S_x, S_y\right)
 $$
 
-$![image](https://hackmd.io/_uploads/rJ7vzLSAJe.png)$
+![image](https://hackmd.io/_uploads/rJ7vzLSAJe.png)
 
 ## Transformasi Lain
 Transformasi dasar seperti translasi, penskalaan dan rotasi merupakan
@@ -221,7 +222,7 @@ $$
 \end{array}\right]
 $$
 
-$![image](https://hackmd.io/_uploads/rkI4fLSCyl.png)$
+![image](https://hackmd.io/_uploads/rkI4fLSCyl.png)
 
 llustrasi refleksi terhadap sumbu x
 
@@ -236,7 +237,7 @@ $$
 \end{array}\right]
 $$
 
-$![image](https://hackmd.io/_uploads/SJw4Q8HRkx.png)$
+![image](https://hackmd.io/_uploads/SJw4Q8HRkx.png)
 
 ## A3. Refleksi Terhadap Sumbu Tegak Lurus Bidang XY
 Refleksi terhadap sumbu yang tegak lurus bidang xy dan melalui titik pusat dinyatakan dengan matriks:
@@ -249,7 +250,7 @@ $$
 \end{array}\right]
 $$
 
-$![image](https://hackmd.io/_uploads/HJ75QUSRkl.png)$
+![image](https://hackmd.io/_uploads/HJ75QUSRkl.png)
 
 ## A4. Refleksi Terhadap Garis Diagonal Y = X
 Refleksi terhadap garis diagonal, y = x dinyatakan dengan matriks:
@@ -262,18 +263,29 @@ $$
 \end{array}\right]
 $$
 
-$$![image](https://hackmd.io/_uploads/H13-VIBAyg.png)$$
+![image](https://hackmd.io/_uploads/H13-VIBAyg.png)
 
 Terhadap sumbu x
+
 • X’ = X
+
 • Y’ = -Y
+
 Terhadap sumbu y
+
 • X’ = -X
+
 • Y’ = Y
+
 Terhadap sumbu y = x
+
 • X’ = Y
+
 • Y’ = X
+
 Terhadap sumbu y = -x
+
 • X’ = -Y
+
 • Y’ = -X
 

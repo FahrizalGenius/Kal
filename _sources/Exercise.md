@@ -125,7 +125,7 @@ $$
 
 ## Kelompok Latihan. Sketsa persegi satuan yang telah ditransformasikan diberikan. Temukan matriks A yang melakukan transformasi ini.
 
-![image](https://hackmd.io/_uploads/H1lyiLB0ye.png)
+![image](https://hackmd.io/_uploads/H1lyiLB0ye.png?raw=true)
 
 
 ### Soal 5
