@@ -47,7 +47,9 @@ A \hat{x}=\left[\begin{array}{ll}
 5
 \end{array}\right]
 $$
+
 b. $A \hat{y}$
+
 $$
 A \hat{y}=\left[\begin{array}{ll}
 1 & 1 \\
@@ -72,7 +74,9 @@ A=\left[\begin{array}{cc}
 -1 & 3
 \end{array}\right]
 $$
+
 a. $A \hat{x}$
+
 $$
 A \hat{x}=\left[\begin{array}{cc}
 2 & 0 \\
@@ -88,7 +92,9 @@ A \hat{x}=\left[\begin{array}{cc}
 2
 \end{array}\right]
 $$
+
 b. $A \hat{y}$
+
 $$
 A \hat{y}=\left[\begin{array}{cc}
 2 & 0 \\
@@ -105,27 +111,13 @@ A \hat{y}=\left[\begin{array}{cc}
 \end{array}\right]
 $$
 
-Prinsip Dasar Transformasi Matriks
-1. Matriks transformasi $2 \times 2, A$, akan mengubah vektor-vektor standar.
-$$
-\hat{x}=\left[\begin{array}{l}
-1 \\
-0
-\end{array}\right], \quad \hat{y}=\left[\begin{array}{l}
-0 \\
-1
-\end{array}\right]
-$$
-2. Hasil transformasi masing-masing vektor akan menjadi kolom-kolom dari matriks $\mathbf{A}$ :
-$$
-A=\left[\begin{array}{ll}
-A \hat{x} & A \hat{y}
-\end{array}\right]
-$$
+
 
 ## Kelompok Latihan. Sketsa persegi satuan yang telah ditransformasikan diberikan. Temukan matriks A yang melakukan transformasi ini.
 
-![image](https://hackmd.io/_uploads/H1lyiLB0ye.png?raw=true)
+
+<img alt="image" src="_images/1.png" />
+
 
 
 ### Soal 5
@@ -138,7 +130,9 @@ A \hat{x}=\left[\begin{array}{l}
 2
 \end{array}\right]
 $$
+
 - Vektor $\hat{y}$ (ke atas 1 satuan) ditransformasikan menjadi:
+
 $$
 A \hat{y}=\left[\begin{array}{l}
 2 \\
@@ -176,7 +170,8 @@ $$
 
 Langkah 2: Susun Matriks Transformasi
 - Masukkan hasil transformasi sebagai kolom-kolom:
-- 
+
+
 $$
 A=\left[\begin{array}{cc}
 1 & -1 \\
