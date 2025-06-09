@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to materi Komputasi aljabar linier &#8212; My KAL book</title>
+    <title>Tugas Cross Dot &#8212; My KAL book</title>
   
   
   
@@ -62,10 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas_Cross_Dot';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="SISTEM PERSAMAAN LINIER" href="sistem_persamaan_3variabel.html" />
+    <link rel="prev" title="Perkalian Titik (Dot Product)" href="Perkalian_Titik.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +117,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +136,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,13 +163,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to materi Komputasi aljabar linier
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sistem_persamaan_3variabel.html">SISTEM PERSAMAAN LINIER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="INVERS_MATRIK.html">INVERS MATRIK</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Matrix_Transformations.html">Matrix Transformations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -186,8 +184,8 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="Eigenvalue_dan_Eigenvector.html">Eigenvalue dan Eigenvector</a></li>
 
-<li class="toctree-l1 has-children"><a class="reference internal" href="Perkalian_Titik.html">Perkalian Titik (Dot Product)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="Tugas_Cross_Dot.html">Tugas Cross Dot</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Perkalian_Titik.html">Perkalian Titik (Dot Product)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Tugas Cross Dot</a></li>
 </ul>
 </details></li>
 </ul>
@@ -266,7 +264,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugas_Cross_Dot.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +294,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Tugas_Cross_Dot.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +370,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to materi Komputasi aljabar linier</h1>
+    <h1>Tugas Cross Dot</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,7 +380,14 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identitas">IDENTITAS:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">jawaban</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang-dari-velttor">1. Luas jajaran genjang dari velttor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang-dari-vektor">2. Luas jajaran genjang dari vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-segitiga-dengan-titik-titik-sudut">3. Luas segitiga dengan titik-titik sudut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Luas segitiga dengan titik-titik sudut</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -394,24 +399,159 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-materi-komputasi-aljabar-linier">
-<h1>Welcome to materi Komputasi aljabar linier<a class="headerlink" href="#welcome-to-materi-komputasi-aljabar-linier" title="Link to this heading">#</a></h1>
-<p>Repository ini Menampung tugas dan materi dari Komputasi aljabar linier</p>
-<section id="identitas">
-<h2>IDENTITAS:<a class="headerlink" href="#identitas" title="Link to this heading">#</a></h2>
-<p>NAMA : FAHRIZAL UMAM</p>
-<p>NIM : 230411100056</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="sistem_persamaan_3variabel.html">SISTEM PERSAMAAN LINIER</a></li>
-<li class="toctree-l1"><a class="reference internal" href="INVERS_MATRIK.html">INVERS MATRIK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Matrix_Transformations.html">Matrix Transformations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalue_dan_Eigenvector.html">Eigenvalue dan Eigenvector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalue_dan_Eigenvector.html#a-v">A
-v</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Perkalian_Titik.html">Perkalian Titik (Dot Product)</a></li>
-</ul>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-cross-dot">
+<h1>Tugas Cross Dot<a class="headerlink" href="#tugas-cross-dot" title="Link to this heading">#</a></h1>
+<section id="soal-1">
+<h2>Soal 1<a class="headerlink" href="#soal-1" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Tentukan luas jajaran genjang yang ditentukan oleh vektor <span class="math notranslate nohighlight">\(\vec{u}=\left[\begin{array}{l}1 \\ 2\end{array}\right]\)</span> dan <span class="math notranslate nohighlight">\(\vec{v}=\left[\begin{array}{l}2 \\ 1\end{array}\right]\)</span>.</p></li>
+<li><p>Tentukan luas jajaran genjang yang ditentukan oleh vektor <span class="math notranslate nohighlight">\(\vec{u}=\left[\begin{array}{l}2 \\ 0\end{array}\right]\)</span> dan <span class="math notranslate nohighlight">\(\vec{v}=\left[\begin{array}{l}0 \\ 3\end{array}\right]\)</span>.</p></li>
+<li><p>Tentukan luas segitiga dengan titik-titik sudut <span class="math notranslate nohighlight">\((0,0,0),(1,3,-1)\)</span>, dan <span class="math notranslate nohighlight">\((2,1,1)\)</span>.</p></li>
+<li><p>Tentukan luas segitiga dengan titik-titik sudut <span class="math notranslate nohighlight">\((5,2,-1),(3,6,2)\)</span>, dan <span class="math notranslate nohighlight">\((1,0,4)\)</span>.</p></li>
+</ol>
+</section>
+<section id="jawaban">
+<h2>jawaban<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
+<section id="luas-jajaran-genjang-dari-velttor">
+<h3>1. Luas jajaran genjang dari velttor<a class="headerlink" href="#luas-jajaran-genjang-dari-velttor" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{u}=\left[\begin{array}{l}
+1 \\
+2
+\end{array}\right], \quad \vec{v}=\left[\begin{array}{l}
+2 \\
+1
+\end{array}\right]
+\end{split}\]</div>
+<p>Untuk vektor 2D, luas jajaran genjang adalah nilai absolut dari determinan matriks 2x2:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text { Luas }=|\vec{u} \times \vec{v}|=\left|\begin{array}{ll}
+1 &amp; 2 \\
+2 &amp; 1
+\end{array}\right|=|(1)(1)-(2)(2)|=|1-4|=3
+\end{split}\]</div>
+<p>Jawaban: Luas = 3</p>
+</section>
+<section id="luas-jajaran-genjang-dari-vektor">
+<h3>2. Luas jajaran genjang dari vektor<a class="headerlink" href="#luas-jajaran-genjang-dari-vektor" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+\vec{u}=\left[\begin{array}{l}
+2 \\
+0
+\end{array}\right], \quad \vec{v}=\left[\begin{array}{l}
+0 \\
+3
+\end{array}\right] \\
+\text { Luas }=\left|\begin{array}{ll}
+2 &amp; 0 \\
+0 &amp; 3
+\end{array}\right|=|(2)(3)-(0)(0)|=|6|=6
+\end{gathered}
+\end{split}\]</div>
+<p>Jawaban: Luas = 6</p>
+</section>
+<section id="luas-segitiga-dengan-titik-titik-sudut">
+<h3>3. Luas segitiga dengan titik-titik sudut<a class="headerlink" href="#luas-segitiga-dengan-titik-titik-sudut" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+A=(0,0,0), \quad B=(1,3,-1), \quad C=(2,1,1)
+\]</div>
+<p>Hitung vektor.
+$<span class="math notranslate nohighlight">\(
+\overrightarrow{A B}=B-A=\left[\begin{array}{c}
+1 \\
+3 \\
+-1
+\end{array}\right], \quad \overrightarrow{A C}=C-A=\left[\begin{array}{l}
+2 \\
+1 \\
+1
+\end{array}\right]
+\)</span>$</p>
+<p>Hitung cross product</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+\overrightarrow{A B} \times \overrightarrow{A C}=\left|\begin{array}{ccc}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+1 &amp; 3 &amp; -1 \\
+2 &amp; 1 &amp; 1
+\end{array}\right|=\mathbf{i}(3 \cdot 1-(-1) \cdot 1)-\mathbf{j}(1 \cdot 1-(-1) \cdot 2)+\mathbf{k}(1 \cdot 1-3 \cdot 2) \\
+=\mathbf{i}(3+1)-\mathbf{j}(1+2)+\mathbf{k}(1-6)=\left[\begin{array}{c}
+4 \\
+-3 \\
+-5
+\end{array}\right]
+\end{gathered}
+\end{split}\]</div>
+<p>Panjang vektor hasil cross:</p>
+<div class="math notranslate nohighlight">
+\[
+|\overrightarrow{A B} \times \overrightarrow{A C}|=\sqrt{4^2+(-3)^2+(-5)^2}=\sqrt{16+9+25}=\sqrt{50}
+\]</div>
+<p>Luas segitiga <span class="math notranslate nohighlight">\(=1 / 2 \times \mid\)</span> cross product:</p>
+<div class="math notranslate nohighlight">
+\[
+\text { Luas }=\frac{1}{2} \sqrt{50}=\frac{1}{2} \cdot 5 \sqrt{2}=\frac{5 \sqrt{2}}{2}
+\]</div>
+<p>Jawaban: Luas <span class="math notranslate nohighlight">\(=\frac{5 \sqrt{2}}{2}\)</span></p>
+</section>
+<section id="id1">
+<h3>4. Luas segitiga dengan titik-titik sudut<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+A=(5,2,-1), \quad B=(3,6,2), \quad C=(1,0,4)
+\]</div>
+<p>Hitung vektor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\overrightarrow{A B}=B-A=\left[\begin{array}{c}
+-2 \\
+4 \\
+3
+\end{array}\right], \quad \overrightarrow{A C}=C-A=\left[\begin{array}{c}
+-4 \\
+-2 \\
+5
+\end{array}\right]
+\end{split}\]</div>
+<p>Cross product</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+\overrightarrow{A B} \times \overrightarrow{A C}=\left|\begin{array}{ccc}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+-2 &amp; 4 &amp; 3 \\
+-4 &amp; -2 &amp; 5
+\end{array}\right|=\mathbf{i}(4 \cdot 5-3 \cdot(-2))-\mathbf{j}(-2 \cdot 5-3 \cdot(-4))+\mathbf{k}(-2 \cdot(-2)-4 \cdot(-4)) \\
+=\mathbf{i}(20+6)-\mathbf{j}(-10+12)+\mathbf{k}(4+16)=\left[\begin{array}{c}
+26 \\
+-2 \\
+20
+\end{array}\right]
+\end{gathered}
+\end{split}\]</div>
+<p>Panjang:</p>
+<div class="math notranslate nohighlight">
+\[
+|\overrightarrow{A B} \times \overrightarrow{A C}|=\sqrt{26^2+(-2)^2+20^2}=\sqrt{676+4+400}=\sqrt{1080}
+\]</div>
+<p>Luas segitiga:</p>
+<div class="math notranslate nohighlight">
+\[
+\text { Luas }=\frac{1}{2} \sqrt{1080}=\frac{\sqrt{1080}}{2}
+\]</div>
+<p>Sederhanakan:</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{1080}=\sqrt{36 \cdot 30}=6 \sqrt{30}
+\]</div>
+<p>Jawaban: Luas <span class="math notranslate nohighlight">\(=3 \sqrt{30}\)</span></p>
+</section>
 </section>
 </section>
 
@@ -445,14 +585,14 @@ v</a></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="sistem_persamaan_3variabel.html"
-       title="next page">
+    <a class="left-prev"
+       href="Perkalian_Titik.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SISTEM PERSAMAAN LINIER</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Perkalian Titik (Dot Product)</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -471,7 +611,14 @@ v</a></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identitas">IDENTITAS:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">jawaban</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang-dari-velttor">1. Luas jajaran genjang dari velttor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang-dari-vektor">2. Luas jajaran genjang dari vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-segitiga-dengan-titik-titik-sudut">3. Luas segitiga dengan titik-titik sudut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Luas segitiga dengan titik-titik sudut</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
