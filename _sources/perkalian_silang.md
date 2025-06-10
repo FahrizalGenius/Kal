@@ -1,5 +1,5 @@
 ---
-title: cross_dot
+title: perkalian_silang
 
 ---
 
