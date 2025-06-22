@@ -65,7 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'SVD';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Perkalian Titik (Dot Product)" href="Perkalian_Titik.html" />
+    <link rel="prev" title="Cross dot" href="Silang.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -185,6 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Eigenvalue_dan_Eigenvector.html">Eigenvalue dan Eigenvector</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Perkalian_Titik.html">Perkalian Titik (Dot Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Silang.html">Cross dot</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Singular Value Decomposition</a></li>
 
 
@@ -742,38 +743,43 @@ A=\left[\begin{array}{ll}
 \end{split}\]</div>
 <section id="perhitungan-eigenvalue-eigenvector-dari-a-t-a">
 <h2>1. Perhitungan Eigenvalue &amp; Eigenvector dari <span class="math notranslate nohighlight">\(A^T A\)</span><a class="headerlink" href="#perhitungan-eigenvalue-eigenvector-dari-a-t-a" title="Link to this heading">#</a></h2>
-<p>Langkah awal: Hitung <span class="math notranslate nohighlight">\(A^T A\)</span>
-$<span class="math notranslate nohighlight">\(
+<p>Langkah awal: Hitung <span class="math notranslate nohighlight">\(A^T A\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 A^T A=\left[\begin{array}{ll}
 21 &amp; 22 \\
 22 &amp; 66
 \end{array}\right]
-\)</span>$</p>
-<p>Eigenvalue dari <span class="math notranslate nohighlight">\(A^T A\)</span> :
-$<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>Eigenvalue dari <span class="math notranslate nohighlight">\(A^T A\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[
 \lambda_1 \approx 74.97, \quad \lambda_2 \approx 12.03
-\)</span>$</p>
-<p>Eigenvector dari <span class="math notranslate nohighlight">\(\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}\)</span> (kolom = eigenvector):
-$<span class="math notranslate nohighlight">\(
+\]</div>
+<p>Eigenvector dari <span class="math notranslate nohighlight">\(\boldsymbol{A}^{\mathrm{T}} \boldsymbol{A}\)</span> (kolom = eigenvector):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 V=\left[\begin{array}{cc}
 -0.9200 &amp; -0.3775 \\
 0.3775 &amp; -0.9260
 \end{array}\right]
-\)</span>$</p>
+\end{split}\]</div>
 </section>
 <section id="dekomposisi-matriks-matrix-transformation">
 <h2>2. Dekomposisi Matriks (Matrix Transformation)<a class="headerlink" href="#dekomposisi-matriks-matrix-transformation" title="Link to this heading">#</a></h2>
-<p>Tansformad slgarhask artinga Wta Eta tulf:
-$<span class="math notranslate nohighlight">\(
+<p>Transformasi eigenbasis artinya kita bisa tulis:</p>
+<div class="math notranslate nohighlight">
+\[
 A^T A=V A V^T
-\)</span><span class="math notranslate nohighlight">\(
-dangan A adalth matrile dlagonal dari alganwalux
-\)</span><span class="math notranslate nohighlight">\(
+\]</div>
+<p>dengan Λ adalah matriks diagonal dari eigenvalue:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \Lambda=\left[\begin{array}{cc}
 74.97 &amp; 0 \\
 0 &amp; 12.03
 \end{array}\right]
-\)</span>$</p>
+\end{split}\]</div>
 </section>
 <section id="singular-value-decomposition-svd">
 <h2>3. Singular Value Decomposition (SVD)<a class="headerlink" href="#singular-value-decomposition-svd" title="Link to this heading">#</a></h2>
@@ -838,12 +844,12 @@ U=\left[\begin{array}{ccc}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Perkalian_Titik.html"
+       href="Silang.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Perkalian Titik (Dot Product)</p>
+        <p class="prev-next-title">Cross dot</p>
       </div>
     </a>
 </div>
